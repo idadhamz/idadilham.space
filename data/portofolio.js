@@ -1,5 +1,5 @@
 
-const listProject = [
+const listPortofolio = [
   {
     id: 1,
     src: '/assets/img/himsiPortofolio.png',
@@ -42,4 +42,4 @@ const listProject = [
   },
 ];
 
-export default listProject;
+export default listPortofolio;

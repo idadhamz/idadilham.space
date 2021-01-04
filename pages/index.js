@@ -2,7 +2,7 @@ import Head from 'next/head'
 // import styles from '../styles/Home.module.css'
 import Link from 'next/link';
 
-import listProject from '../data/project';
+import listPortofolio from '../data/portofolio';
 import Nav from '../components/nav';
 
 export default function Home() {
@@ -12,9 +12,9 @@ export default function Home() {
       <Head>
         <title>Idadcode</title>
       </Head>
-      
-      <div class="container mx-auto px-10">
-        <div class="grid grid-cols-1 lg:grid-cols-4">
+
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-4 divide-y-2 lg:divide-x">
           <Nav />
           <div class="col-span-3">
 
@@ -36,7 +36,7 @@ export default function Home() {
                     Information System Student at UIN Syarif Hidayatullah Jakarta.
                     Love to explore learning something new, traveling a new places and
                     also like to reading. <br></br><br></br>
-                    Yuk Berkenalan dengan saya melalui <span class="font-bold text-blue-700 hover:underline"><Link href="https://www.linkedin.com/in/idadilhams/">LinkedIn</Link></span> atau <span class="font-bold text-purple-600 hover:underline"><Link href="https://www.instagram.com/idadcode/">Instagram</Link></span>
+                    Let's get acquainted with me through <span class="font-bold text-blue-700 hover:underline"><Link href="https://www.linkedin.com/in/idadilhams/">LinkedIn</Link></span> or <span class="font-bold text-purple-600 hover:underline"><Link href="https://www.instagram.com/idadcode/">Instagram</Link></span>
                     </p>
                     {/* <p class="text-lg text-grey-700">Hi, Perkenalkan saya <span class="font-bold text-green-700">Dadi Ilham Setiadi</span> <br></br> Mahasiswa IT (Sistem Informasi) <br></br> 
                       Universitas Islam Negeri Syarif Hidayatullah Jakarta <br></br> <br></br> 
@@ -53,7 +53,7 @@ export default function Home() {
                   </h1>
                   <div class="grid grid-cols-1 lg:grid-cols-3">
                     
-                    { listProject.slice(0,3).map((data) => (
+                    { listPortofolio.slice(0,3).map((data) => (
                     
                     <div class="col-span-1 bg-gray-200 rounded-md my-5 mr-5">
                       <div class="px-5 py-10">
