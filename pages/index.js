@@ -24,13 +24,18 @@ export default function Home() {
                   <img src="/assets/img/fotoDadi.jpeg" class="lg:w-80 object-cover rounded-xl"></img>
                 </div>
                 <div class="col-span-3 lg:my-auto">
-                  <div class="my-auto lg:mx-20">
-                    <h1 class="my-5 text-2xl lg:text-4xl antialiased">
+                  <div class="my-10 lg:my-auto lg:mx-20">
+                    <h1 class="my-5 text-4xl lg:text-4xl antialiased">
                       <span class="font-bold text-gray-700">Dadi Ilham Setiadi</span>
                     </h1>
-                    <h3 class="my-5 text-xl lg:text-xl antialiased">
-                      <span class="font-bold text-gray-700 bg-green-100 rounded-md p-1"><i>Information System Student</i>. <i>Software Engineer</i>.</span>
-                    </h3>
+                    <div class="my-6">
+                      <h3 class="text-xl lg:text-lg antialiased inline">
+                        <span class="font-bold text-green-700 bg-green-100 rounded-md py-2 px-4">Software Engineer</span>
+                      </h3>
+                      <h3 class="text-xl lg:text-lg antialiased inline mx-4">
+                        <span class="font-bold text-blue-700 bg-blue-100 rounded-md py-2 px-4">UI/UX Enthusiast</span>
+                      </h3>
+                    </div>
                     <p class="text-md text-gray-700 leading-relaxed">Hello my name is <b>Dadi ilham
                     Setiadi</b>. I am a technology enthusiast and currently final year
                     Information System Student at UIN Syarif Hidayatullah Jakarta.
