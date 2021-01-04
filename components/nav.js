@@ -19,7 +19,7 @@ export default function Nav(){
               {listNavs.map((data) => (
                 <li class={router.pathname == data.href ? "rounded-xl bg-green-700 text-white" : ""}>
                   <Link href={data.href}>
-                      <p class="rounded-xl font-sans text-xl font-bold hover:bg-green-700 hover:text-white text-left p-4 cursor-pointer">{data.text}</p>
+                      <p class="rounded-xl font-sans text-xl font-bold border border-grey-700 hover:border-green-700 text-left p-4 cursor-pointer">{data.text}</p>
                   </Link>
                 </li>
               ))}

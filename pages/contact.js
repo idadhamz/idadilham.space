@@ -14,7 +14,7 @@ export default function Contact() {
       <div class="container mx-auto px-10">
         <div class="grid grid-cols-1 lg:grid-cols-4">
           <Nav />
-          <div class="col-span-3 my-10">
+          <div class="col-span-3 my-5">
             <h1 class="m-5 mb-10 text-2xl lg:text-3xl antialiased tracking-wide text-gray-700">
               <span class="font-bold text-gray-700 bg-green-100 p-1">Contact</span>
             </h1>
