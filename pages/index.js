@@ -21,7 +21,7 @@ export default function Home() {
             <div class="p-10 space-y-10">
               <div class="grid grid-cols-1 lg:grid-cols-4">
                 <div class="col-span-1">
-                  <img src="/assets/img/fotoDadi.jpeg" class="lg:w-80 object-cover rounded-xl"></img>
+                  <img src="/assets/img/fotoDadi.jpeg" class="w-60 h-auto lg:w-80 object-cover rounded-xl"></img>
                 </div>
                 <div class="col-span-3 lg:my-auto">
                   <div class="my-10 lg:my-auto lg:mx-20">
@@ -29,10 +29,10 @@ export default function Home() {
                       <span class="font-bold text-gray-700">Dadi Ilham Setiadi</span>
                     </h1>
                     <div class="my-6">
-                      <h3 class="text-xl lg:text-lg antialiased inline">
+                      <h3 class="text-xl lg:text-lg antialiased lg:inline">
                         <span class="font-bold text-green-700 bg-green-100 rounded-md py-2 px-4">Software Engineer</span>
                       </h3>
-                      <h3 class="text-xl lg:text-lg antialiased inline mx-4">
+                      <h3 class="text-xl lg:text-lg antialiased lg:inline my-6 lg:mx-4">
                         <span class="font-bold text-blue-700 bg-blue-100 rounded-md py-2 px-4">UI/UX Enthusiast</span>
                       </h3>
                     </div>
@@ -54,7 +54,7 @@ export default function Home() {
               <div class="grid grid-cols-1 lg:grid-cols-4">
                 <div class="col-span-4">
                   <h1 class="my-5 text-2xl lg:text-3xl antialiased tracking-wide text-gray-700">
-                      <span class="font-bold text-green-700">Latest</span> Project
+                      <span class="font-bold text-green-700">Latest</span> Portofolio
                   </h1>
                   <div class="grid grid-cols-1 lg:grid-cols-3">
                     

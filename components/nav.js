@@ -15,15 +15,18 @@ export default function Nav(){
 
     return(
         <div>
-            <ul class="p-10 space-y-3 lg:fixed">
+            <ul class="p-10 lg:fixed">
+              <Link href="/">
+                <img src="https://instagram.fcgk9-2.fna.fbcdn.net/v/t51.2885-19/s320x320/127091039_377152586727817_703580884705788533_n.jpg?_nc_ht=instagram.fcgk9-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=lq-a4PO0nqEAX_XFMii&tp=1&oh=2a3578eb305955027835205b9fb46b65&oe=601CFBAE" class="w-20 h-auto my-4 lg:w-20 lg:h-auto lg:m-4 object-cover rounded-full border-2 border-gray-300 hover:border-green-700 cursor-pointer"></img>
+              </Link>
               {listNavs.map((data) => (
                 <li class={router.pathname == data.href ? "rounded-xl text-green-700" : ""}>
                   <Link href={data.href}>
-                      <p class="rounded-full font-sans text-xl font-bold hover:bg-green-200 w-max p-4 cursor-pointer">
+                      <p class="rounded-full font-sans text-xl lg:text-xl font-bold hover:bg-green-200 w-max p-2 lg:p-4 cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-10 w-10 inline">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={data.icon} />
                         </svg>
-                        <span class="px-3">{data.text}</span>
+                        <span class="px-5">{data.text}</span>
                       </p>
                   </Link>
                 </li>
