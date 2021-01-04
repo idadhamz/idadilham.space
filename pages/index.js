@@ -1,65 +1,131 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+// import styles from '../styles/Home.module.css'
+import Link from 'next/link';
+
+import listProject from '../data/project';
+import Nav from '../components/nav';
 
 export default function Home() {
+
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Idadcode</title>
       </Head>
+      
+      <div class="container mx-auto px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-4">
+          <Nav />
+          <div class="col-span-3">
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+            <div class="p-10 space-y-10">
+              <div class="grid grid-cols-1 lg:grid-cols-4">
+                <div class="col-span-1">
+                  <img src="/assets/img/fotoDadi.jpeg" class="lg:w-80 object-cover rounded-xl"></img>
+                </div>
+                <div class="col-span-3 lg:my-auto">
+                  <div class="my-auto lg:mx-20">
+                    <h1 class="my-5 text-2xl lg:text-4xl antialiased">
+                      <span class="font-bold text-gray-700">Dadi Ilham Setiadi</span>
+                    </h1>
+                    <h3 class="my-5 text-xl lg:text-xl antialiased">
+                      <span class="font-bold text-gray-700 bg-green-100 rounded-md p-1"><i>Information System Student</i>. <i>Software Engineer</i>.</span>
+                    </h3>
+                    <p class="text-md text-gray-700 leading-relaxed">Hello my name is <b>Dadi ilham
+                    Setiadi</b>. I am a technology enthusiast and currently final year
+                    Information System Student at UIN Syarif Hidayatullah Jakarta.
+                    Love to explore learning something new, traveling a new places and
+                    also like to reading. <br></br><br></br>
+                    Yuk Berkenalan dengan saya melalui <span class="font-bold text-blue-700 hover:underline"><Link href="https://www.linkedin.com/in/idadilhams/">LinkedIn</Link></span> atau <span class="font-bold text-purple-600 hover:underline"><Link href="https://www.instagram.com/idadcode/">Instagram</Link></span>
+                    </p>
+                    {/* <p class="text-lg text-grey-700">Hi, Perkenalkan saya <span class="font-bold text-green-700">Dadi Ilham Setiadi</span> <br></br> Mahasiswa IT (Sistem Informasi) <br></br> 
+                      Universitas Islam Negeri Syarif Hidayatullah Jakarta <br></br> <br></br> 
+                      Yuk Berkenalan dengan saya melalui <span class="font-bold text-blue-700 hover:underline"><Link href="https://www.linkedin.com/in/idadilhams/">LinkedIn</Link></span> atau <span class="font-bold text-purple-600 hover:underline"><Link href="https://www.instagram.com/idadcode/">Instagram</Link></span>
+                    </p> */}
+                  </div>
+                </div>
+              </div>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+              <div class="grid grid-cols-1 lg:grid-cols-4">
+                <div class="col-span-4">
+                  <h1 class="my-5 text-2xl lg:text-3xl antialiased tracking-wide text-gray-700">
+                      <span class="font-bold text-green-700">Latest</span> Project
+                  </h1>
+                  <div class="grid grid-cols-1 lg:grid-cols-3">
+                    
+                    { listProject.slice(0,3).map((data) => (
+                    
+                    <div class="col-span-1 bg-gray-200 rounded-md my-5 mr-5">
+                      <div class="px-5 py-10">
+                        <img src={data.src} class="object-cover rounded-md"></img>
+                        <Link href={data.url}>
+                          <h1 class="m-5 font-bold text-md text-gray-800 text-left hover:text-green-700 hover:underline cursor-pointer">{data.caption}</h1>
+                        </Link>
+                        {data.type === 'Website' ? (
+                          <p class="bg-green-700 text-white text-sm rounded-full mx-5 px-5 py-2 w-min">{data.type}</p>
+                        ) : (
+                          <p class="bg-blue-700 text-white text-sm rounded-full mx-5 px-5 py-2 w-min">{data.type}</p>
+                        )}
+                      </div>
+                    </div>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+                    ))}
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+                  </div>
+                </div>
+              </div>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+              {/* <h1 class="my-5 text-2xl lg:text-3xl antialiased tracking-wide text-gray-700">
+                <span class="font-bold text-green-700">Keep In Touch</span>
+              </h1> */}
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+              {/* <div class="grid grid-cols-1"> */}
+                    
+                {/* { listProject.slice(0,3).map((data) => ( */}
+                    
+                    {/* <div class="col-span-auto bg-gray-200 rounded-md my-5 mr-5">
+                      <div class="grid grid-cols-3">
+
+                        <div class="col-span-auto p-10">
+                          <h1 class="text-center text-lg text-gray-700 font-bold hover:text-green-700 cursor-pointer">
+                            dadiilhamsetiadii@gmail.com
+                          </h1>
+                        </div>
+                        <div class="col-span-auto p-10">
+                          <h1 class="text-center text-lg text-gray-700 font-bold hover:text-green-700 cursor-pointer">
+                            LinkedIn
+                          </h1>
+                        </div>
+                        <div class="col-span-auto p-10">
+                          <h1 class="text-center text-lg text-gray-700 font-bold hover:text-green-700 cursor-pointer">
+                            Dribbble
+                          </h1>
+                        </div>
+                        <div class="col-span-auto p-10">
+                          <h1 class="text-center text-lg text-gray-700 font-bold hover:text-green-700 cursor-pointer">
+                            Github
+                          </h1>
+                        </div>
+                        <div class="col-span-auto p-10">
+                          <h1 class="text-center text-lg text-gray-700 font-bold hover:text-green-700 cursor-pointer">
+                            Instagram
+                          </h1>
+                        </div>
+
+                      </div>
+
+                    </div> */}
+
+                {/* ))} */}
+
+              {/* </div> */}
+
+            </div>
+
+          </div>
         </div>
-      </main>
+      </div>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
   )
 }
