@@ -32,10 +32,10 @@ export default function Home() {
                       <span class="font-bold text-gray-700">Dadi Ilham Setiadi</span>
                     </h1>
                     <div class="my-6">
-                      <h3 class="text-xl lg:text-lg antialiased lg:inline">
+                      <h3 class="text-md lg:text-lg antialiased inline">
                         <span class="font-bold text-green-700 bg-green-100 rounded-md py-2 px-4">Software Engineer</span>
                       </h3>
-                      <h3 class="text-xl lg:text-lg antialiased lg:inline my-6 lg:mx-4">
+                      <h3 class="text-md lg:text-lg antialiased inline my-6 mx-4">
                         <span class="font-bold text-blue-700 bg-blue-100 rounded-md py-2 px-4">UI/UX Enthusiast</span>
                       </h3>
                     </div>
