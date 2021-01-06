@@ -14,6 +14,7 @@ export default function Home() {
         <title>Idadcode</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Welcome to Dadi Ilham S's portfolio website, I hope we can work together and achieve the expected goals."></meta>
+        <meta name="google-site-verification" content="0xwjgRwg4ZHIOlN8RtuhBwmAyLuEZvWfAHqSeGZZGjY" />
       </Head>
 
       <div class="container mx-auto">

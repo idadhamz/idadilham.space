@@ -12,6 +12,7 @@ export default function Blog() {
         <title>Blog | Idadcode</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="This is a page that lists the blogs of Dadi Ilham S."></meta>
+        <meta name="google-site-verification" content="0xwjgRwg4ZHIOlN8RtuhBwmAyLuEZvWfAHqSeGZZGjY" />
       </Head>
       
       <div class="container mx-auto">
