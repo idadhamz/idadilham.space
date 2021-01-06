@@ -24,7 +24,7 @@ export default function Home() {
             <div class="p-10 space-y-10">
               <div class="grid grid-cols-1 lg:grid-cols-4">
                 <div class="col-span-1">
-                  <img src="/assets/img/fotoDadi.jpeg" class="w-60 h-auto lg:w-80 object-cover rounded-xl"></img>
+                  <img src="/assets/img/fotoDadi.jpeg" alt="foto-dadi-intro" class="w-60 h-auto lg:w-80 object-cover rounded-xl"></img>
                 </div>
                 <div class="col-span-3 lg:my-auto">
                   <div class="my-10 lg:my-auto lg:mx-20">
@@ -65,7 +65,7 @@ export default function Home() {
                     
                     <div class="col-span-1 bg-gray-200 rounded-md my-5 mr-5">
                       <div class="px-5 py-10">
-                        <img src={data.src} class="object-cover rounded-md"></img>
+                        <img src={data.src} alt={data.altText} class="object-cover rounded-md"></img>
                         <Link href={data.url}>
                           <h1 class="m-5 font-bold text-md text-gray-800 text-left hover:text-green-700 hover:underline cursor-pointer">{data.caption}</h1>
                         </Link>

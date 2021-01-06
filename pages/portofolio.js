@@ -38,7 +38,7 @@ export default function Portofolio() {
                     
                     <div class="col-span-1 bg-gray-200 rounded-md lg:mr-10 mb-10">
                       <div class="px-5 py-10">
-                        <img src={data.src} class="object-cover rounded-md"></img>
+                        <img src={data.src} alt={data.altText} class="object-cover rounded-md"></img>
                         <Link href={data.url}>
                           <h1 class="m-5 font-bold text-md text-gray-800 text-left hover:text-green-700 hover:underline cursor-pointer">{data.caption}</h1>
                         </Link>
