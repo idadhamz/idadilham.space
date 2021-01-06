@@ -10,7 +10,10 @@ export default function Home() {
   return (
     <div>
       <Head>
+        <meta charset="UTF-8"></meta>
         <title>Idadcode</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
+        <meta name="description" content="Welcome to Dadi Ilham S's portfolio website, I hope we can work together and achieve the expected goals."></meta>
       </Head>
 
       <div class="container mx-auto">

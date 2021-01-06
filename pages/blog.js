@@ -8,7 +8,10 @@ export default function Blog() {
     <div>
 
       <Head>
+        <meta charset="UTF-8"></meta>
         <title>Blog | Idadcode</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
+        <meta name="description" content="This is a page that lists the blogs of Dadi Ilham S."></meta>
       </Head>
       
       <div class="container mx-auto">

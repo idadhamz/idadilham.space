@@ -8,7 +8,10 @@ export default function Contact() {
     <div>
 
       <Head>
+        <meta charset="UTF-8"></meta>
         <title>Contact | Idadcode</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
+        <meta name="description" content="This is a page that contains ways to contact Dadi Ilham S if you want to collaborate on a project"></meta>
       </Head>
       
       <div class="container mx-auto">
