@@ -22,8 +22,8 @@ export default function Nav(){
               {listNavs.map((data) => (
                 <li class={router.pathname == data.href ? "rounded-xl text-green-700" : ""}>
                   <Link href={data.href}>
-                      <p class="rounded-full font-sans text-xl lg:text-xl font-bold hover:bg-green-200 w-max p-2 lg:p-4 cursor-pointer">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-10 w-10 inline">
+                      <p class="rounded-full font-sans text-lg lg:text-lg font-bold hover:bg-green-200 w-max p-2 lg:p-4 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-7 w-7 inline">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={data.icon} />
                         </svg>
                         <span class="px-5">{data.text}</span>
