@@ -2,7 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://idadcode.xyz</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://idadcode.xyz/portofolio</loc>
+    </url>
+    <url>
+        <loc>https://idadcode.xyz/blog</loc>
+    </url>
+    <url>
+        <loc>https://idadcode.xyz/contact</loc>
     </url>
 </urlset>
