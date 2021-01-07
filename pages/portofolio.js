@@ -12,9 +12,9 @@ export default function Portofolio() {
 
       <Head>
         <meta charset="UTF-8"></meta>
-        <title>Portofolio | Idadcode</title>
+        <title>Portfolio | Idadcode</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="This is a page that lists the portfolios of Dadi Ilham S."></meta>
+        <meta name="description" content="Portfolio of @idadcode, was create website and UI exploration."></meta>
         <meta name="google-site-verification" content="0xwjgRwg4ZHIOlN8RtuhBwmAyLuEZvWfAHqSeGZZGjY" />
       </Head>
       
@@ -37,16 +37,23 @@ export default function Portofolio() {
               <div class="grid grid-cols-1 lg:grid-cols-2">
                   { listPortofolio.map((data) => (
                     
-                    <div class="col-span-1 bg-gray-200 rounded-md lg:mr-10 mb-10">
-                      <div class="px-5 py-10">
-                        <img src={data.src} alt={data.altText} class="object-cover rounded-md"></img>
-                        <Link href={data.url}>
-                          <h1 class="m-5 font-bold text-md text-gray-800 text-left hover:text-green-700 hover:underline cursor-pointer">{data.caption}</h1>
-                        </Link>
+                    <div class="col-span-1 my-5 mr-5">
+                      <div>
+                        <img src={data.src} alt={data.altText} class="object-cover rounded-md border border-gray-200 max-h-80"></img>
+                        <div class="my-4">
+                          <Link href={data.url}>
+                            <h1 class="font-semibold text-lg text-gray-800 text-left hover:text-green-700 hover:underline cursor-pointer">{data.caption}</h1>
+                          </Link>
+                          {/* <div class="my-1"> */}
+                            { data.stack.map((item) => (
+                              <h1 class="mr-2 font-medium text-sm text-gray-500 text-left inline">{item}</h1>
+                            ))}
+                          {/* </div> */}
+                        </div>
                         {data.type === 'Website' ? (
-                          <p class="bg-green-700 text-white text-sm rounded-full mx-5 px-5 py-2 w-min">{data.type}</p>
+                          <p class="bg-green-700 text-white text-sm rounded-full px-4 py-2 w-min">{data.type}</p>
                         ) : (
-                          <p class="bg-blue-700 text-white text-sm rounded-full mx-5 px-5 py-2 w-min">{data.type}</p>
+                          <p class="bg-blue-700 text-white text-sm rounded-full px-4 py-2 w-min">{data.type}</p>
                         )}
                       </div>
                     </div>

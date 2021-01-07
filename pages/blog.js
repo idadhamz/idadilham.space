@@ -11,7 +11,7 @@ export default function Blog() {
         <meta charset="UTF-8"></meta>
         <title>Blog | Idadcode</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="This is a page that lists the blogs of Dadi Ilham S."></meta>
+        <meta name="description" content="Blog of @idadcode, sharing knowledge about technology like programing code and others."></meta>
         <meta name="google-site-verification" content="0xwjgRwg4ZHIOlN8RtuhBwmAyLuEZvWfAHqSeGZZGjY" />
       </Head>
       
