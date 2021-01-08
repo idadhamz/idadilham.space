@@ -39,7 +39,7 @@ export default function BlogTemplate({ frontmatter, markdownBody }) {
 
   return (
     <Layout>
-        <div class="col-span-1 my-5 w-max p-2">
+        <div class="col-span-1 my-5 p-2">
             <div>
                 <div>
                     <h1 class="font-bold text-4xl text-gray-800 text-left cursor-pointer">{frontmatter.title}</h1>
