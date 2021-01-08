@@ -15,7 +15,8 @@ fields:
     required: false
     date_format: 
     time_format: 
-    display_utc: false
+    display_utc: true
+  default: now
 - name: image
   type: file
   config:
