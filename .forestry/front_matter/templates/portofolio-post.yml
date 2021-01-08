@@ -1,4 +1,37 @@
 ---
 label: Portofolio Post
 hide_body: true
-fields: []
+fields:
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
+- name: tech_stack
+  type: tag_list
+  default: []
+  label: Tech Stack
+- name: type
+  type: select
+  default: Website
+  config:
+    required: false
+    options:
+    - Website
+    - Mobile Application
+    - UI Exploration
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: type
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
