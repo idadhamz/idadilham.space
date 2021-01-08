@@ -11,6 +11,8 @@ sections:
   label: Posts
   create: documents
   match: "**/*"
+  templates:
+  - blog-post
 - type: directory
   path: content
   label: Pages
