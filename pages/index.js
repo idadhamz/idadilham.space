@@ -20,7 +20,7 @@ export default function Home() {
 
       {/* <img src="/assets/img/circle_shapes.svg" alt="circle-intro" class="w-80 h-auto lg:w-200 absolute top-0 left-0 z-0"></img> */}
       <div class="container mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-4 divide-y-2 lg:divide-x">
+        <div class="grid grid-cols-1 lg:grid-cols-4 lg:divide-x">
           <Nav />
           <div class="col-span-3">
 

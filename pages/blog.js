@@ -1,8 +1,10 @@
-import Head from 'next/head'
-// import styles from '../styles/Home.module.css'
-import Nav from '../components/nav';
+import Head from 'next/head';
+import matter from 'gray-matter';
 
-export default function Blog() {
+import Nav from '../components/nav';
+import BlogList from '../components/blogList';
+
+export default function Blog(props) {
 
   return (
     <div>
@@ -16,7 +18,7 @@ export default function Blog() {
       </Head>
       
       <div class="container mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-4 divide-y-2">
+        <div class="grid grid-cols-1 lg:grid-cols-4 lg:divide-x">
           <Nav />
           <div class="col-span-3">
             <div class="p-10">
@@ -26,9 +28,11 @@ export default function Blog() {
                 </svg>
                 <span class="font-bold text-gray-700 px-2">Blog</span>
               </h1>
-              <h2 class="text-xl lg:text-xl antialiased tracking-wide text-gray-700">
+              {/* <h2 class="text-xl lg:text-xl antialiased tracking-wide text-gray-700">
                 <span class="font-bold text-gray-700">This section is still under construction ✌🏻</span>
-              </h2>
+              </h2> */}
+              <BlogList allBlogs={props.allBlogs} />
+              {console.log(props.allBlogs)}
             </div>
           </div>
           {/* <div class="col-span-3">
@@ -51,4 +55,36 @@ export default function Blog() {
 
     </div>
   )
+}
+
+export async function getStaticProps() {
+  //get blogs & context from folder
+  const blogs = (context => {
+    const keys = context.keys()
+    const values = keys.map(context)
+
+    const data = keys.map((key, index) => {
+      // Create slug from filename
+      const slug = key
+        .replace(/^.*[\\\/]/, '')
+        .split('.')
+        .slice(0, -1)
+        .join('.')
+      const value = values[index]
+      // Parse yaml metadata & markdownbody in document
+      const document = matter(value.default)
+      return {
+        frontmatter: document.data,
+        markdownBody: document.content,
+        slug,
+      }
+    })
+    return data
+  })(require.context('../content/blogs', true, /\.md$/))
+
+  return {
+    props: {
+      allBlogs: blogs,
+    },
+  }
 }

@@ -16,7 +16,7 @@ export default function Contact() {
       </Head>
       
       <div class="container mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-4 divide-y-2">
+        <div class="grid grid-cols-1 lg:grid-cols-4 lg:divide-x">
           <Nav />
           <div class="col-span-3">
             <div class="p-10">

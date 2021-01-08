@@ -19,7 +19,7 @@ export default function Portofolio() {
       </Head>
       
       <div class="container mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-4 divide-y-2 lg:divide-x">
+        <div class="grid grid-cols-1 lg:grid-cols-4 lg:divide-x">
           <Nav />
           <div class="col-span-3">
             <div class="p-10">
