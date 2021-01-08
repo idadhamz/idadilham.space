@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Content
 - type: directory
   path: content/posts
   label: Posts
@@ -19,11 +21,9 @@ sections:
 - type: document
   path: data/authors.yml
   label: Authors
-  match: "**/*"
 - type: document
   path: data/locations.yml
   label: Locations
-  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
