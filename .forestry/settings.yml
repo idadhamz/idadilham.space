@@ -18,12 +18,16 @@ sections:
   match: "/*"
 - type: heading
   label: Data
-- type: document
-  path: data/authors.yml
+- type: directory
+  path: data
   label: Authors
-- type: document
-  path: data/locations.yml
+  create: all
+  match: authors.yml
+- type: directory
+  path: data
   label: Locations
+  create: all
+  match: locations.yml
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
