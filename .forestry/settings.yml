@@ -7,17 +7,19 @@ sections:
 - type: heading
   label: Content
 - type: directory
-  path: content/posts
-  label: Posts
+  path: content/blogs
+  label: Blogs
   create: documents
   match: "**/*"
   templates:
   - blog-post
 - type: directory
-  path: content
-  label: Pages
-  create: all
+  path: content/portofolios
+  label: Portofolio's
+  create: documents
   match: "/*"
+  templates:
+  - blog-post
 - type: heading
   label: Data
 - type: directory
