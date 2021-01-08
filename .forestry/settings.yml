@@ -19,7 +19,7 @@ sections:
   create: documents
   match: "/*"
   templates:
-  - blog-post
+  - portofolio-post
 - type: heading
   label: Data
 - type: directory
