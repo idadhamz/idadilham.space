@@ -21,5 +21,3 @@ fields:
   config:
     maxSize: 64
   label: Image
-pages:
-- content/posts/tes-forestry.md
