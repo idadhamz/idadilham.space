@@ -1,6 +1,6 @@
 ---
-label: Blog post
-hide_body: true
+label: Blog Post
+hide_body: false
 fields:
 - name: title
   type: text
