@@ -3,7 +3,7 @@ import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 const glob = require('glob')
 
-import Layout from '../../components/Layout'
+import Layout from '../../components/layout'
 
 export default function BlogTemplate({ frontmatter, markdownBody }) {
 
