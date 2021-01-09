@@ -35,6 +35,8 @@ export default function BlogTemplate({ frontmatter, markdownBody }) {
     
   }
 
+  const image_src = "/assets/uploads";
+
   if (!frontmatter) return <></>
 
   return (
@@ -42,6 +44,7 @@ export default function BlogTemplate({ frontmatter, markdownBody }) {
         <div class="col-span-1 my-5 p-2">
             <div>
                 <div>
+                    <img src={image_src + frontmatter.image} alt={frontmatter.image}></img>
                     <h1 class="font-bold text-4xl text-gray-800 text-left cursor-pointer">{frontmatter.title}</h1>
                     <h2 class="font-normal text-lg text-gray-800 text-left py-5">Date <span class="font-bold pl-10">{reformatDate(frontmatter.date)}</span></h2>
                     <p class="font-normal text-lg text-gray-800 text-left my-5">
