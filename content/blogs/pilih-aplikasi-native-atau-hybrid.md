@@ -1,6 +1,6 @@
 ---
-title: Pilih Aplikasi Native atau Hybrid ?
-date: 2021-01-08T16:00:00Z
+title: 'Pilih Aplikasi Native atau Hybrid ?'
+date: '2021-01-08T16:00:00Z'
 image: "/blogs-2.jpeg"
 
 ---
