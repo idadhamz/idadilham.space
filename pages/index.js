@@ -47,7 +47,7 @@ export default function Home() {
                     Information System Student at UIN Syarif Hidayatullah Jakarta.
                     Love to explore learning something new, traveling a new places and
                     also like to reading. <br></br><br></br>
-                    Let's get acquainted with me through <span class="font-bold transition duration-300 text-blue-200 hover:text-blue-700"><Link href="https://www.linkedin.com/in/idadilhams/">LinkedIn</Link></span> or <span class="font-bold transition duration-300 text-purple-200 hover:text-purple-700"><Link href="https://www.instagram.com/idadcode/">Instagram</Link></span>
+                    Let's get acquainted with me through <span class="font-bold transition duration-300 text-blue-700 hover:underline"><Link href="https://www.linkedin.com/in/idadilhams/"> LinkedIn</Link></span> or <span class="font-bold transition duration-300 text-purple-700 hover:underline"><Link href="https://www.instagram.com/idadcode/">Instagram</Link></span>
                     </p>
                     {/* <p class="text-lg text-grey-700">Hi, Perkenalkan saya <span class="font-bold text-green-700">Dadi Ilham Setiadi</span> <br></br> Mahasiswa IT (Sistem Informasi) <br></br> 
                       Universitas Islam Negeri Syarif Hidayatullah Jakarta <br></br> <br></br> 

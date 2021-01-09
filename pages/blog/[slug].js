@@ -47,7 +47,7 @@ export default function BlogTemplate({ frontmatter, markdownBody, titleBlog }) {
                 <div>
                     <h1 class="font-bold text-4xl text-gray-800 text-left cursor-pointer">{frontmatter.title}</h1>
                     <h2 class="font-normal text-lg text-gray-800 text-left py-5">Date <span class="font-bold pl-10">{reformatDate(frontmatter.date)}</span></h2>
-                    <img src={image_src + frontmatter.image} alt={frontmatter.image} class="py-5 w-3/5"></img>
+                    <img src={image_src + frontmatter.image} alt={frontmatter.image} class="py-5 lg:w-4/5"></img>
                     <p class="font-normal text-lg text-gray-800 text-left my-5">
                         {/* <ReactMarkdown
                             source={markdownBody}
