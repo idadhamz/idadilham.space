@@ -11,6 +11,7 @@
     "autoprefixer": "^10.1.0",
     "glob": "^7.1.6",
     "gray-matter": "^4.0.2",
+    "markdown-to-jsx": "^7.1.0",
     "marked": "^1.2.7",
     "next": "10.0.4",
     "postcss": "^8.2.2",
