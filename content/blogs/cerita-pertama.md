@@ -1,6 +1,6 @@
 ---
 title: "First Blog \U0001F64F\U0001F60A"
-date: 2021-01-08T09:00:00Z
+date: "2021-01-08T09:00:00Z"
 image: "/hello-from-cat.png"
 
 ---
