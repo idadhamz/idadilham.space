@@ -1,12 +1,14 @@
 import Head from 'next/head'
 // import styles from '../styles/Home.module.css'
 import Link from 'next/link';
+import matter from 'gray-matter';
 
 import listPortofolio from '../data/portofolio';
 import Nav from '../components/nav';
+import BlogList from '../components/blogList';
 import Footer from '../components/footer';
 
-export default function Home() {
+export default function Home(props) {
 
   return (
     <div>
@@ -34,13 +36,19 @@ export default function Home() {
                     <h1 class="my-5 text-4xl lg:text-4xl antialiased">
                       <span class="font-bold text-gray-700">Dadi Ilham Setiadi</span>
                     </h1>
-                    <div class="my-6">
-                      <h3 class="text-sm lg:text-md antialiased inline">
+                    <div class="my-6 space-x-2">
+                      {/* <h3 class="text-sm lg:text-md antialiased inline">
                         <span class="font-bold text-green-700 bg-green-100 rounded-md py-2 px-4">Software Engineer</span>
                       </h3>
                       <h3 class="text-sm lg:text-md antialiased inline my-6 mx-4">
                         <span class="font-bold text-blue-700 bg-blue-100 rounded-md py-2 px-4">UI/UX Enthusiast</span>
-                      </h3>
+                      </h3> */}
+                      <span class="w-full px-4 py-2 text-base rounded-full text-indigo-500 border border-indigo-500">
+                        Software Engineer
+                      </span>
+                      <span class="w-full px-4 py-2 text-base rounded-full text-green-500 border border-green-500">
+                        UI/UX Enthusiast
+                      </span>
                     </div>
                     <p class="text-md text-gray-700 leading-relaxed">Hello my name is <b>Dadi ilham
                     Setiadi</b>. I am a technology enthusiast and currently final year
@@ -59,12 +67,12 @@ export default function Home() {
 
               <div class="grid grid-cols-1 lg:grid-cols-4">
                 <div class="col-span-4">
-                  <h1 class="my-5 text-2xl lg:text-3xl antialiased tracking-wide text-gray-700">
+                  <h1 class="my-5 text-2xl lg:text-3xl antialiased text-gray-700">
                       <span class="font-bold text-green-700">Latest</span> Portofolio
                   </h1>
-                  <div class="grid grid-cols-1 lg:grid-cols-2">
+                  <div class="grid grid-cols-1 lg:grid-cols-3">
                     
-                    { listPortofolio.slice(0,2).map((data) => (
+                    { listPortofolio.slice(0,3).map((data) => (
                     
                     <div class="col-span-1 my-5 mr-5">
                       <div>
@@ -90,6 +98,17 @@ export default function Home() {
                     ))}
 
                   </div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 lg:grid-cols-4">
+                <div class="col-span-4">
+                  <h1 class="text-2xl lg:text-3xl antialiased text-gray-700">
+                      <span class="font-bold text-green-700">Latest</span> Blog
+                  </h1>
+                    
+                  <BlogList allBlogs={props.allBlogs.slice(0, 2)} />
+
                 </div>
               </div>
 
@@ -148,4 +167,36 @@ export default function Home() {
 
     </div>
   )
+}
+
+export async function getStaticProps() {
+  //get blogs & context from folder
+  const blogs = (context => {
+    const keys = context.keys()
+    const values = keys.map(context)
+
+    const data = keys.map((key, index) => {
+      // Create slug from filename
+      const slug = key
+        .replace(/^.*[\\\/]/, '')
+        .split('.')
+        .slice(0, -1)
+        .join('.')
+      const value = values[index]
+      // Parse yaml metadata & markdownbody in document
+      const document = matter(value.default)
+      return {
+        frontmatter: document.data,
+        markdownBody: document.content,
+        slug,
+      }
+    })
+    return data
+  })(require.context('../content/blogs', true, /\.md$/))
+
+  return {
+    props: {
+      allBlogs: blogs,
+    },
+  }
 }

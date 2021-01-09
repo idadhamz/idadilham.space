@@ -6,7 +6,7 @@ image: "/hello-from-cat.png"
 ---
 **Hello Guys** 😊
 
-Sungguh senang hati ini, alhamdulillah bisa mulai mengembangkan web pribadi saya yang berisi mengenai diri saya, project atau portofolio yang telah saya kembangkan dan ingin mengshare pengetahuan yang semoga bermanfaat bagi orang lain 🙏😊
+Alhamdulillah bisa mulai mengembangkan web pribadi saya yang berisi mengenai diri saya, project atau portofolio yang telah saya kembangkan dan ingin mengshare pengetahuan yang semoga bermanfaat bagi orang lain 🙏😊
 
 **Dadi Ilham Setiadi**
 

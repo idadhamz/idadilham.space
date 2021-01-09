@@ -30,40 +30,33 @@ export default function BlogList({allBlogs}){
         case 11: bulan = "Des"; break;
       }
   
-      const date_indo = tanggal + " " + bulan + " " + tahun;
+      const date_indo = bulan + " " + tanggal + ", " + tahun;
       
       return date_indo
       
     }
 
+    const image_src = "/assets/uploads";
+
     return(
         <div>
-            <div class="grid grid-cols-1">
+            <div class="grid grid-cols-2 my-10">
                   { allBlogs.map((blog) => (
                     
-                    <div class="col-span-1 m-1 text-black border-b border-gray-300">
-                      <div>
-                        <div class="py-5">
+                    <div class="col-span-2 lg:col-span-1 mr-5 mb-5">
+                      <div class="bg-white border border-gray-300 p-5 rounded lg:w-full">
+                        <div>
+                          <img src={image_src + blog.frontmatter.image}
+                              class="bg-cover bg-center bg-gray-300 h-80 rounded object-cover transition duration-500 ease-in-out transform hover:scale-105">
+                          </img>
+                        </div>
+                        <div class="my-6">
+                          <p class="text-md font-normal tracking-wide text-black-600 my-1">{reformatDate(blog.frontmatter.date)}</p>
                           <Link key={blog.slug} href={{ pathname: `/blog/${blog.slug}` }}>
-                            <h1 class="font-bold text-2xl text-left inline cursor-pointer hover:underline ">
+                            <p class="text-xl font-bold tracking-wide text-black-600 cursor-pointer hover:text-green-700">
                               {blog.frontmatter.title}
-                            </h1>
+                            </p>
                           </Link>
-                          <Link key={blog.slug} href={{ pathname: `/blog/${blog.slug}` }}>
-                            <div class="float-right text-lg inline cursor-pointer hover:underline">
-                              See details
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="mx-2 h-7 w-7 inline">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                              </svg>
-                            </div>
-                          </Link>
-                          
-                          {/* <h2 class="font-bold text-sm text-gray-800 text-left">{reformatDate(blog.frontmatter.date)}</h2> */}
-                          {/* <p class="my-5">
-                            <ReactMarkdown
-                              source={truncateSummary(blog.markdownBody)}
-                            />
-                          </p> */}
                         </div>
                       </div>
                     </div>
