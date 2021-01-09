@@ -1,7 +1,7 @@
 ---
-title: 'Pilih Aplikasi Native atau Hybrid ?'
-date: '2021-01-08T16:00:00Z'
-image: "/blogs-2.jpeg"
+title: Pilih Aplikasi Native atau Hybrid ?
+date: 2021-01-08T16:00:00Z
+image: "/pilih-hybrid-atau-native.jpeg"
 
 ---
 Dalam dunia pemograman, perkembangan teknologi sangat cepat sehingga kita harus dapat mengikuti arus dari perkembangan tersebut. Dan dalam hal ini khusunya yaitu pengembangan **mobile application** yang dapat dikembangkan dengan cara **_native_** atau **_hybrid_**.
