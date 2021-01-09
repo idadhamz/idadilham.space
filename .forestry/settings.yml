@@ -32,7 +32,7 @@ sections:
   label: Locations
   create: all
   match: locations.yml
-upload_dir: public/assets/upload
+upload_dir: public/assets/uploads
 public_path: "/public/assets/uploads"
 front_matter_path: ''
 use_front_matter_path: true
