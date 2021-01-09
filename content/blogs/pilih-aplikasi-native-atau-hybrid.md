@@ -1,11 +1,16 @@
 ---
-title: "Pilih Aplikasi Native atau Hybrid ?"
-date: "2021-01-08T16:00:00Z"
-image: "/2021/01/08/blogs-2.jpeg"
+title: Pilih Aplikasi Native atau Hybrid ?
+date: 2021-01-08T16:00:00Z
+image: "/blogs-2.jpeg"
 
 ---
-Dalam dunia pemograman, perkembangan teknologi sangat cepat sehingga kita harus dapat mengikuti arus dari perkembangan tersebut. Dan dalam hal ini khusunya yaitu pengembangan **mobile application** yang dapat dikembangkan dengan cara **_native_** atau **_hybrid_**. 
+Dalam dunia pemograman, perkembangan teknologi sangat cepat sehingga kita harus dapat mengikuti arus dari perkembangan tersebut. Dan dalam hal ini khusunya yaitu pengembangan **mobile application** yang dapat dikembangkan dengan cara **_native_** atau **_hybrid_**.
 
-Sebelumnya apakah itu aplikasi **_native_** ? 
+Sebelumnya apakah itu aplikasi **_native_** ?
 
-> Aplikasi mobile yang menggunakan teknologi **native** dikembangkan menggunakan bahasa **native** (asli) dari sistem operasi pada suatu device / smartphone. Contohnya yaitu **Java atau Kotlin** (Android) dan **Swift** (iOS).
+> Aplikasi mobile yang menggunakan teknologi **native** dikembangkan menggunakan bahasa **native** (asli) dari sistem operasi pada suatu device / smartphone. 
+>
+> Contoh Pemograman : 
+>
+> * **Java atau Kotlin** (Android) 
+> * **Swift** (iOS).
