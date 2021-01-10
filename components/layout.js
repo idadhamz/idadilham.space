@@ -9,9 +9,9 @@ export default function Layout(props) {
 
       <Head>
         <meta charset="UTF-8"></meta>
-        <title>{props.titleBlog} | Idadcode</title>
+        <title>{props.titleBlog} | Idadilham</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Blog of @idadcode, sharing knowledge about technology like programing code and others."></meta>
+        <meta name="description" content={props.titleBlog}></meta>
         <meta name="google-site-verification" content="0xwjgRwg4ZHIOlN8RtuhBwmAyLuEZvWfAHqSeGZZGjY" />
       </Head>
       

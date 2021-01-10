@@ -14,7 +14,7 @@ export default function Home(props) {
     <div>
       <Head>
         <meta charset="UTF-8"></meta>
-        <title>Idadcode</title>
+        <title>Idadilham</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Hello my name is Dadi ilham S. I am a technology enthusiast and currently final year Information System Student at UIN Syarif Hidayatullah Jakarta."></meta>
         <meta name="google-site-verification" content="0xwjgRwg4ZHIOlN8RtuhBwmAyLuEZvWfAHqSeGZZGjY" />
