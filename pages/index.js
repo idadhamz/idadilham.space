@@ -26,7 +26,7 @@ export default function Home(props) {
           <Nav />
           <div class="col-span-3">
 
-            <div class="p-10 space-y-10">
+            <div class="p-5 lg:p-10 space-y-10">
               <div class="grid grid-cols-1 lg:grid-cols-4">
                 <div class="col-span-1">
                   <img src="/assets/img/fotoDadi.jpeg" alt="foto-dadi-intro" class="w-60 h-auto lg:w-80 object-cover rounded-xl"></img>
@@ -34,7 +34,7 @@ export default function Home(props) {
                 <div class="col-span-3 lg:my-auto">
                   <div class="my-10 lg:my-auto lg:mx-20">
                     <h1 class="my-5 text-4xl lg:text-4xl antialiased">
-                      <span class="font-bold text-gray-700">Dadi Ilham Setiadi</span>
+                      <span class="font-bold text-black">Dadi Ilham Setiadi</span>
                     </h1>
                     <div class="my-6 space-x-2">
                       {/* <h3 class="text-sm lg:text-md antialiased inline">

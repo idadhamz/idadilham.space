@@ -22,7 +22,7 @@ export default function Portofolio() {
         <div class="grid grid-cols-1 lg:grid-cols-4 lg:divide-x">
           <Nav />
           <div class="col-span-3">
-            <div class="p-12">
+            <div class="p-5 lg:p-12">
               {/* <p class="mb-10">
                 <h1 class="text-3xl lg:text-2xl antialiased text-gray-700 hover:underline cursor-pointer">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-10 w-10 inline">
