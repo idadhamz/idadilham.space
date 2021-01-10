@@ -26,7 +26,7 @@ export default function Home(props) {
           <Nav />
           <div class="col-span-3">
 
-            <div class="p-5 lg:p-10 space-y-10">
+            <div class="p-5 lg:p-12 space-y-10">
               <div class="grid grid-cols-1 lg:grid-cols-4">
                 <div class="col-span-1">
                   <img src="/assets/img/fotoDadi.jpeg" alt="foto-dadi-intro" class="w-60 h-auto lg:w-80 object-cover rounded-xl"></img>
