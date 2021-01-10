@@ -12,7 +12,7 @@ export default function Layout(props) {
         <title>{props.titleBlog} | Idadilham</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content={props.titleBlog}></meta>
-        <meta name="google-site-verification" content="0xwjgRwg4ZHIOlN8RtuhBwmAyLuEZvWfAHqSeGZZGjY" />
+        <meta name="google-site-verification" content="QtPLOMbLk5ajIwIdcq0yrxGvpF5Djm9hrsVk7kMl-6g" />
       </Head>
       
       <div class="container mx-auto">

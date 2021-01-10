@@ -14,7 +14,7 @@ export default function Blog(props) {
         <title>Blog | Idadilham</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Blog of Idadilham.site, sharing knowledge about technology like programing code and others."></meta>
-        <meta name="google-site-verification" content="0xwjgRwg4ZHIOlN8RtuhBwmAyLuEZvWfAHqSeGZZGjY" />
+        <meta name="google-site-verification" content="QtPLOMbLk5ajIwIdcq0yrxGvpF5Djm9hrsVk7kMl-6g" />
       </Head>
       
       <div class="container mx-auto">

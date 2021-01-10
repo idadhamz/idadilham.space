@@ -12,7 +12,7 @@ export default function Contact() {
         <title>Contact | Idadilham</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Contact of Idadilham.site, Say Hello! If you want to talk to me about something that could interest me, you can send me message to @idadcode instagram."></meta>
-        <meta name="google-site-verification" content="0xwjgRwg4ZHIOlN8RtuhBwmAyLuEZvWfAHqSeGZZGjY" />
+        <meta name="google-site-verification" content="QtPLOMbLk5ajIwIdcq0yrxGvpF5Djm9hrsVk7kMl-6g" />
       </Head>
       
       <div class="container mx-auto">
