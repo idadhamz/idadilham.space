@@ -14,7 +14,7 @@ export default function Portofolio() {
         <meta charset="UTF-8"></meta>
         <title>Portfolio | Idadilham</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Portfolio of Idadilham.site, was create website and UI exploration."></meta>
+        <meta name="description" content="Portfolio of Dadi Ilham S, was create website and UI exploration."></meta>
         <meta name="google-site-verification" content="QtPLOMbLk5ajIwIdcq0yrxGvpF5Djm9hrsVk7kMl-6g" />
       </Head>
       
