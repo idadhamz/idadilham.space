@@ -46,7 +46,7 @@ export default function BlogList({allBlogs}){
                     <div class="col-span-2 lg:col-span-1 mr-5 mb-5">
                       <div class="bg-white border border-gray-300 p-5 rounded lg:w-full">
                         <div>
-                          <img src={image_src + blog.frontmatter.image}
+                          <img src={image_src + blog.frontmatter.image} alt={frontmatter.image}
                               class="bg-cover bg-center bg-gray-300 h-80 rounded object-cover transition duration-500 ease-in-out transform hover:scale-105">
                           </img>
                         </div>

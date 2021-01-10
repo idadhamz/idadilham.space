@@ -41,7 +41,7 @@ export default function Nav(){
                   <img src="https://instagram.fcgk9-2.fna.fbcdn.net/v/t51.2885-19/s320x320/127091039_377152586727817_703580884705788533_n.jpg?_nc_ht=instagram.fcgk9-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=lq-a4PO0nqEAX_XFMii&tp=1&oh=2a3578eb305955027835205b9fb46b65&oe=601CFBAE" alt="foto-dadi-nav" class="w-20 h-auto my-4 lg:w-20 lg:h-auto lg:m-4 p-2 object-cover rounded-2xl border border-gray-300 hover:border-green-700 cursor-pointer"></img>
                 </Link>
               </div>
-              <button onClick={() => setOpen(!open)} class="text-gray-800 dark:text-white inline-flex items-center justify-center p-5 rounded-md focus:outline-none">
+              <button onClick={() => setOpen(!open)} class="text-gray-800 dark:text-white inline-flex items-center justify-center p-5 rounded-md focus:outline-none" aria-label="Burger Menu">
                 <svg width="20" height="20" fill="currentColor" class="h-8 w-8" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z">
                     </path>
