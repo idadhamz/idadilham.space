@@ -12,9 +12,9 @@ export default function Portofolio() {
 
       <Head>
         <meta charset="UTF-8"></meta>
-        <title>Portfolio | Idadcode</title>
+        <title>Portfolio | Idadilham</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Portfolio of @idadcode, was create website and UI exploration."></meta>
+        <meta name="description" content="Portfolio of Idadilham.site, was create website and UI exploration."></meta>
         <meta name="google-site-verification" content="0xwjgRwg4ZHIOlN8RtuhBwmAyLuEZvWfAHqSeGZZGjY" />
       </Head>
       

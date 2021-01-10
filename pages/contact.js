@@ -9,9 +9,9 @@ export default function Contact() {
 
       <Head>
         <meta charset="UTF-8"></meta>
-        <title>Contact | Idadcode</title>
+        <title>Contact | Idadilham</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Contact of @idadcode, Say Hello! If you want to talk to me about something that could interest me, you can send me message to @idadcode instagram."></meta>
+        <meta name="description" content="Contact of Idadilham.site, Say Hello! If you want to talk to me about something that could interest me, you can send me message to @idadcode instagram."></meta>
         <meta name="google-site-verification" content="0xwjgRwg4ZHIOlN8RtuhBwmAyLuEZvWfAHqSeGZZGjY" />
       </Head>
       

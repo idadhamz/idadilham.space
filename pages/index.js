@@ -16,7 +16,7 @@ export default function Home(props) {
         <meta charset="UTF-8"></meta>
         <title>Idadcode</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Dadi Ilham S - Software Engineer, This web contains portofolio, blogs and how to contact @idadcode."></meta>
+        <meta name="description" content="Hello my name is Dadi ilham S. I am a technology enthusiast and currently final year Information System Student at UIN Syarif Hidayatullah Jakarta."></meta>
         <meta name="google-site-verification" content="0xwjgRwg4ZHIOlN8RtuhBwmAyLuEZvWfAHqSeGZZGjY" />
       </Head>
 
