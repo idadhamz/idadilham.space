@@ -7,7 +7,7 @@ const listPortofolio = [
     caption: 'Official HIMSI UIN Jakarta',
     url: 'http://himsiuinjkt.herokuapp.com/',
     type: 'Website',
-    stack: ['HTML', 'CSS', 'Bootstrap 4', 'Laravel']
+    stack: ['HTML', 'CSS', 'Bootstrap 4']
   },
   {
     id: 2,

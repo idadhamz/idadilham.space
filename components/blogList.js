@@ -40,24 +40,32 @@ export default function BlogList({allBlogs}){
 
     return(
         <div>
-            <div class="grid grid-cols-2 my-10">
+            <div class="grid grid-cols-1 my-10">
                   { allBlogs.map((blog) => (
                     
-                    <div class="col-span-2 lg:col-span-1 mr-5 mb-5">
-                      <div class="bg-white border border-gray-300 p-5 rounded lg:w-full">
+                    <div class="col-span-1 lg:col-span-1 mb-3 mr-5">
+                      <div class="bg-green-400 hover:bg-green-300 cursor-pointer border p-5 rounded-lg lg:w-full">
                         <div>
-                          <img src={image_src + blog.frontmatter.image} alt={blog.frontmatter.image}
+                          {/* <img src={image_src + blog.frontmatter.image} alt={blog.frontmatter.image}
                               class="bg-cover bg-center bg-gray-300 h-80 rounded object-cover transition duration-500 ease-in-out transform hover:scale-105">
-                          </img>
+                          </img> */}
                         </div>
-                        <div class="my-6">
-                          <p class="text-md font-normal tracking-wide text-black-600 my-1">{reformatDate(blog.frontmatter.date)}</p>
-                          <Link key={blog.slug} href={{ pathname: `/blog/${blog.slug}` }}>
-                            <p class="text-xl font-bold tracking-wide text-black-600 cursor-pointer hover:text-green-700">
-                              {blog.frontmatter.title}
-                            </p>
-                          </Link>
-                        </div>
+                        <Link key={blog.slug} href={{ pathname: `/blog/${blog.slug}` }}>
+                          <div class="px-5 py-1 flex justify-between">
+                            {/* <img src={image_src + blog.frontmatter.image} alt={blog.frontmatter.image}
+                              class="inline bg-cover bg-center bg-gray-300 h-20 rounded-xl object-cover">
+                            </img> */}
+                            <div class="flex-initial">
+                              <p class="text-xl font-semibold tracking-wide text-white">
+                                {blog.frontmatter.title}
+                              </p>
+                              <p class="text-md font-normal tracking-wide text-white my-1">{reformatDate(blog.frontmatter.date)}</p>
+                            </div>
+                            <div class="flex-initial">
+                              <p class="w-max h-auto bg-green-700 hover:bg-green-500 px-5 py-3 rounded-full text-white">Detail Blog</p>
+                            </div>
+                          </div>
+                        </Link>
                       </div>
                     </div>
 
