@@ -74,7 +74,7 @@ export default function Home(props) {
                     
                     { listPortofolio.slice(0,2).map((data, index) => (
                     
-                    <div class="col-span-1 my-5 mr-5">
+                    <div class="col-span-1 my-5 mr-5" key={index}>
                       <div>
                         <div class="w-auto h-auto">
                           <img src={data.src} alt={data.altText} class="object-cover transition duration-500 ease-in-out transform hover:scale-105"></img>
@@ -87,8 +87,8 @@ export default function Home(props) {
                             {/* { data.stack.map((item, index) => (
                               <h1 class="font-medium text-sm text-gray-500 text-left inline">{index === 3 ? item : item + " – " }</h1>
                             ))} */}
-                            { data.stack.map((item) => (
-                              <h1 class="font-medium text-sm text-gray-500 text-left inline mr-2">{item}</h1>
+                            { data.stack.map((item, index) => (
+                              <h1 class="font-medium text-sm text-gray-500 text-left inline mr-2" key={index}>{item}</h1>
                             ))}
                           </div>
                           <div class="flex-initial">

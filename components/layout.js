@@ -19,7 +19,7 @@ export default function Layout(props) {
         <div class="grid grid-cols-1 lg:grid-cols-4 lg:divide-x">
           <Nav />
           <div class="col-span-3">
-            <div class="p-10">
+            <div class="p-5 lg:p-12">
                 <Link href="/blog">
                     <h1 class="text-xl lg:text-xl antialiased text-gray-700 mb-10 hover:underline cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-7 w-7 inline">

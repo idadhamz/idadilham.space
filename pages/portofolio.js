@@ -41,9 +41,9 @@ export default function Portofolio() {
                 <span class="font-bold text-green-700">All</span> Portofolio
               </h1>
               <div class="grid grid-cols-1 lg:grid-cols-2">
-                  { listPortofolio.map((data) => (
+                  { listPortofolio.map((data, index) => (
                     
-                    <div class="col-span-1 my-5 mr-5">
+                    <div class="col-span-1 my-5 mr-5" key={index}>
                       <div>
                         <img src={data.src} alt={data.altText} class="object-cover w-full max-h-72 transition duration-500 ease-in-out transform hover:scale-105"></img>
                         <div class="px-2 py-5 flex space-x-2 justify-between">

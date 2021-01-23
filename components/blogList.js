@@ -41,9 +41,9 @@ export default function BlogList({allBlogs}){
     return(
         <div>
             <div class="grid grid-cols-1 my-10">
-                  { allBlogs.map((blog) => (
+                  { allBlogs.map((blog, index) => (
                     
-                    <div class="col-span-1 lg:col-span-1 mb-3 mr-5">
+                    <div class="col-span-1 lg:col-span-1 mb-3 mr-5" key={index}>
                       <div class="bg-green-400 hover:bg-green-300 cursor-pointer border p-5 rounded-lg lg:w-full">
                         <div>
                           {/* <img src={image_src + blog.frontmatter.image} alt={blog.frontmatter.image}
@@ -51,12 +51,12 @@ export default function BlogList({allBlogs}){
                           </img> */}
                         </div>
                         <Link key={blog.slug} href={{ pathname: `/blog/${blog.slug}` }}>
-                          <div class="px-5 py-1 flex justify-between">
+                          <div class="px-3 py-1 flex justify-between">
                             {/* <img src={image_src + blog.frontmatter.image} alt={blog.frontmatter.image}
                               class="inline bg-cover bg-center bg-gray-300 h-20 rounded-xl object-cover">
                             </img> */}
-                            <div class="flex-initial">
-                              <p class="text-xl font-semibold tracking-wide text-white">
+                            <div class="flex-initial pr-5">
+                              <p class="text-lg md:text-xl font-semibold tracking-wide text-white">
                                 {blog.frontmatter.title}
                               </p>
                               <p class="text-md font-normal tracking-wide text-white my-1">{reformatDate(blog.frontmatter.date)}</p>
