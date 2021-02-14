@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import matter from 'gray-matter';
 
-import listPortofolio from '../data/portofolio';
+import listProjects from '../data/projects';
 import listWork from '../data/work';
 
 import Nav from '../components/nav';
@@ -82,11 +82,11 @@ export default function Home(props) {
               <div class="grid grid-cols-1 lg:grid-cols-4">
                 <div class="col-span-4">
                   <h1 class="my-5 text-2xl lg:text-3xl antialiased text-gray-700">
-                      <span class="font-bold text-green-700">Latest</span> Portofolio
+                      <span class="font-bold text-green-700">Latest</span> Projects
                   </h1>
                   <div class="grid grid-cols-1 lg:grid-cols-2">
                     
-                    { listPortofolio.slice(0,2).map((data, index) => (
+                    { listProjects.slice(0,2).map((data, index) => (
                     
                     <div class="col-span-1 my-5 mr-5 w-full md:w-auto" key={index}>
                       <div>
