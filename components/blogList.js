@@ -43,13 +43,8 @@ export default function BlogList({allBlogs}){
             <div class="grid grid-cols-1 my-10">
                   { allBlogs.map((blog, index) => (
                     
-                    <div class="col-span-1 lg:col-span-1 mb-3 mr-5" key={index}>
-                      <div class="bg-green-400 hover:bg-green-300 cursor-pointer border p-5 rounded-lg lg:w-full">
-                        <div>
-                          {/* <img src={image_src + blog.frontmatter.image} alt={blog.frontmatter.image}
-                              class="bg-cover bg-center bg-gray-300 h-80 rounded object-cover transition duration-500 ease-in-out transform hover:scale-105">
-                          </img> */}
-                        </div>
+                    <div class="col-span-1 lg:col-span-1 mb-3 mr-5 w-full md:w-auto" key={index}>
+                      <div class="bg-green-400 hover:bg-green-300 cursor-pointer border px-3 py-5 rounded-lg lg:w-full">
                         <Link key={blog.slug} href={{ pathname: `/blog/${blog.slug}` }}>
                           <div class="px-3 py-1 flex justify-between">
                             {/* <img src={image_src + blog.frontmatter.image} alt={blog.frontmatter.image}
