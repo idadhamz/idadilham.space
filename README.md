@@ -31,19 +31,69 @@
 ## Dokumentasi Endpoint API
 
 - Login : `http://localhost:8000/api/login`
-- Profile - Detail : `http://localhost:8000/api/users/${id}` - Edit : `http://localhost:8000/api/users/${id}` - Edit Password : `http://localhost:8000/api/users`
-- Company - Read - Create - Edit - Delete
-- Parameter - Read - Create - Edit - Delete
-- Job Position - Read - Create - Edit - Delete
-- Employee - Read - Create - Edit - Delete
-- Client Company - Read - Create - Edit - Delete
-- Country - Read - Create - Edit - Delete
-- Contract Type - Read - Create - Edit - Delete
-- Resource - Read - Create - Edit - Delete
-- Job Category - Read - Create - Edit - Delete
-- Quotation - Read - Create - Edit - Delete
-- Quotation Resources - Read - Create - Edit - Delete
-- Quotation Deliverables - Read - Create - Edit - Delete
+- Profile 
+- - Detail : `http://localhost:8000/api/users/${id}` 
+- - Edit : `http://localhost:8000/api/users/${id}` 
+- - Edit Password : `http://localhost:8000/api/users`
+- Company 
+- - Read 
+- - Create 
+- - Edit 
+- - Delete
+- Parameter 
+- - Read 
+- - Create 
+- - Edit 
+- - Delete
+- Job Position 
+- - Read 
+- - Create 
+- - Edit 
+- - Delete
+- Employee
+- - Read 
+- - Create 
+- - Edit 
+- - Delete
+- Client Company 
+- - Read 
+- - Create 
+- - Edit - Delete
+- Country 
+- - Read 
+- - Create 
+- - Edit 
+- - Delete
+- Contract Type 
+- - Read 
+- - Create 
+- - Edit 
+- - Delete
+- Resource 
+- - Read 
+- - Create 
+- - Edit 
+- - Delete
+- Job Category 
+- - Read 
+- - Create 
+- - Edit 
+- - Delete
+- Quotation 
+- - Read 
+- - Create 
+- - Edit 
+- - Delete
+- Quotation Resources 
+- - Read 
+- - Create 
+- - Edit 
+- - Delete
+- Quotation Deliverables 
+- - Read 
+- - Create 
+- - Edit 
+- - Delete
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
