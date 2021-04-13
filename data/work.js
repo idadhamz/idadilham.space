@@ -2,7 +2,7 @@
 const listWork = [
     {
         id: 1,
-        job: 'PHP Laravel Internship',
+        job: 'Web Developer Internship',
         company: 'PT. Indoglobal Nusa Persada',
         date: 'Jan - Feb 2020',
         url: 'https://pintro.id/'
