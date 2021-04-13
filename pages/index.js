@@ -35,7 +35,7 @@ export default function Home(props) {
               <div class="grid grid-cols-1 lg:grid-cols-4">
                 <div class="col-span-1">
                   <img
-                    src="/assets/img/fotoDadi.jfif"
+                    src="/assets/img/fotoDadi.jpeg"
                     alt="foto-dadi-intro"
                     class="w-60 h-auto lg:w-80 object-cover rounded-xl"
                   ></img>
