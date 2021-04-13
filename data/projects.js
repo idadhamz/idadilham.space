@@ -47,12 +47,12 @@ const listProjects = [
   },
   {
     id: 6,
-    src: '/assets/img/DailyVidPorto.png',
-    altText: 'daily-covid',
-    caption: 'Daily Vid Landing Page',
-    url: 'https://dailyvid.netlify.app/',
+    src: '/assets/img/TravelinPorto.png',
+    altText: 'travelin',
+    caption: 'Travalin Landing Page',
+    url: 'https://dribbble.com/shots/14639026-Hush-Adopt-Pet-Adoption-Apps',
     type: 'Website',
-    stack: ['HTML', 'CSS', 'Javascript', 'Web Components'],
+    stack: ['HTML', 'CSS', 'Javascript'],
   },
   {
     id: 7,
@@ -65,12 +65,12 @@ const listProjects = [
   },
   {
     id: 8,
-    src: '/assets/img/TravelinPorto.png',
-    altText: 'travelin',
-    caption: 'Travalin Landing Page',
-    url: 'https://dribbble.com/shots/14639026-Hush-Adopt-Pet-Adoption-Apps',
+    src: '/assets/img/DailyVidPorto.png',
+    altText: 'daily-covid',
+    caption: 'Daily Vid Landing Page',
+    url: 'https://dailyvid.netlify.app/',
     type: 'Website',
-    stack: ['HTML', 'CSS', 'Javascript'],
+    stack: ['HTML', 'CSS', 'Javascript', 'Web Components'],
   },
 ]
 

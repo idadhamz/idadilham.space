@@ -27,7 +27,7 @@ export default function Projects() {
                 <span class="font-bold text-green-700">All</span> Projects
               </h1>
               <div class="grid grid-cols-1 lg:grid-cols-2">
-                  { listProjects.map((data, index) => (
+                  { listProjects.sort((a,b) => b.id - a.id).map((data, index) => (
                     
                     <div class="col-span-1 my-5 mr-5 w-full md:w-auto" key={index}>
                       <div>
