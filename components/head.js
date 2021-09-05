@@ -12,7 +12,7 @@ export default function index({ data }) {
 
             <meta property="og:title" content={data.title} key="ogtitle" />
             <meta property="og:description" content={data.description} key="ogdesc" />
-            <meta property="og:image" content="/assets/img/fotoVectorMeta.jpg" key="ogimage" />
+            <meta property="og:image" content="https://ibb.co/h9rfBjm" key="ogimage" />
         </Head>
     )
 }
