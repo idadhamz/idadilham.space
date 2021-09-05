@@ -1,6 +1,6 @@
 import matter from 'gray-matter';
 
-import MetaHead from '../components/meta-head/index';
+import MetaHead from '../components/head';
 import Nav from '../components/nav';
 import BlogList from '../components/blogList';
 

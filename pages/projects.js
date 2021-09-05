@@ -1,6 +1,6 @@
 import listProjects from '../data/projects';
 
-import MetaHead from '../components/meta-head/index';
+import MetaHead from '../components/head';
 import Nav from '../components/nav';
 import ProjectItem from '../components/project-item/index';
 

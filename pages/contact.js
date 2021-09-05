@@ -1,4 +1,4 @@
-import MetaHead from '../components/meta-head/index';
+import MetaHead from '../components/head';
 import Nav from '../components/nav';
 
 export default function Contact() {

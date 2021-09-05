@@ -2,7 +2,7 @@ import matter from 'gray-matter';
 
 import listProjects from '../data/projects';
 
-import MetaHead from '../components/meta-head/index';
+import MetaHead from '../components/head';
 import Nav from '../components/nav';
 import BlogList from '../components/blogList';
 import HeroSection from '../components/hero-section/index';
