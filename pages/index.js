@@ -13,7 +13,8 @@ export default function Home(props) {
 
   const data = {
     title: 'Idadilham',
-    description: 'Hello its me Dadi ilham S. I\'m a technology enthusiast and currently final year Information System Student at UIN Syarif Hidayatullah Jakarta.'
+    description: 'Hello its me Dadi ilham S. I\'m a technology enthusiast and currently final year Information System Student at UIN Syarif Hidayatullah Jakarta.',
+    url: 'https://idadilham.site/'
   };
 
   return (

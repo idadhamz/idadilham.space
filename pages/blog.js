@@ -8,7 +8,8 @@ export default function Blog(props) {
 
   const data = {
     title: 'Blog | Idadilham',
-    description: 'Blog of Dadi Ilham S, sharing knowledge about technology like programing code and others.'
+    description: 'Blog of Dadi Ilham S, sharing knowledge about technology like programing code and others.',
+    url: 'https://idadilham.site/blog'
   };
 
   return (

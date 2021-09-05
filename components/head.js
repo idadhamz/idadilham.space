@@ -11,8 +11,9 @@ export default function index({ data }) {
             <meta name="google-site-verification" content="QtPLOMbLk5ajIwIdcq0yrxGvpF5Djm9hrsVk7kMl-6g" />
 
             <meta property="og:title" content={data.title} key="ogtitle" />
-            <meta property="og:description" content={data.description} key="ogdesc" />
             <meta property="og:image" content="https://ibb.co/h9rfBjm" key="ogimage" />
+            <meta property="og:description" content={data.description} key="ogdesc" />
+            <meta property="og:url" content={data.url} key="ogimage" />
         </Head>
     )
 }

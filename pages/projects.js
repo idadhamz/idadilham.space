@@ -8,7 +8,8 @@ export default function Projects() {
 
   const data = {
     title: 'Projects | Idadilham',
-    description: 'Projects Portfolio of Dadi Ilham S, was create website and UI exploration.'
+    description: 'Projects Portfolio of Dadi Ilham S, was create website and UI exploration.',
+    url: 'https://idadilham.site/projects'
   };
 
   return (
