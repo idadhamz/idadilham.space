@@ -27,10 +27,10 @@ export default function Home(props) {
           <Nav />
           <div className="col-span-3">
 
-            <div className="p-5 lg:p-12 space-y-10">
+            <div className="p-5 space-y-10 lg:p-12">
               <HeroSection />
 
-              <h1 className="my-5 text-2xl lg:text-3xl antialiased text-gray-700">
+              <h1 className="my-5 text-2xl antialiased text-gray-700 lg:text-3xl">
                 <span className="font-bold text-green-700">Work</span> History
               </h1>
 
@@ -38,7 +38,7 @@ export default function Home(props) {
 
               <div className="grid grid-cols-1 lg:grid-cols-4">
                 <div className="col-span-4">
-                  <h1 className="my-5 text-2xl lg:text-3xl antialiased text-gray-700">
+                  <h1 className="my-5 text-2xl antialiased text-gray-700 lg:text-3xl">
                     <span className="font-bold text-green-700">Latest</span> Projects
                   </h1>
                   <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -53,7 +53,7 @@ export default function Home(props) {
 
               <div className="grid grid-cols-1 lg:grid-cols-4">
                 <div className="col-span-4">
-                  <h1 className="text-2xl lg:text-3xl antialiased text-gray-700">
+                  <h1 className="text-2xl antialiased text-gray-700 lg:text-3xl">
                     <span className="font-bold text-green-700">Latest</span> Blog
                   </h1>
 

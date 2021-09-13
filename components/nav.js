@@ -16,7 +16,7 @@ export default function Nav() {
         </Link>
         <NavContent />
       </ul>
-      <div class="flex items-center justify-between px-5 py-5 block sm:hidden">
+      <div class="flex items-center justify-between px-5 py-5 sm:hidden">
         <div>
           <Link href="/">
             <img src="/assets/img/fotoVector.jpg" alt="foto-dadi-nav" class="w-20 h-auto my-4 lg:w-20 lg:h-auto lg:m-4 p-2 object-cover rounded-2xl border border-gray-300 hover:border-green-700 cursor-pointer"></img>

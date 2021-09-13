@@ -2,25 +2,25 @@ import Link from 'next/link';
 
 export default function index({ data }) {
     return (
-        <div className="col-span-1 my-5 mr-5 w-full md:w-auto">
+        <div className="w-full col-span-1 my-5 mr-5 md:w-auto">
             <div>
                 <div className="w-auto h-auto">
-                    <img src={data.src} alt={data.altText} className="w-full h-80 object-cover transition duration-500 ease-in-out transform hover:scale-105" />
+                    <img src={data.src} alt={data.altText} className="object-cover w-full transition duration-500 ease-in-out transform h-80 hover:scale-105" />
                 </div>
-                <div className="px-2 py-5 flex space-x-2 justify-between">
+                <div className="flex justify-between px-2 py-5 space-x-2">
                     <div className="flex-initial">
                         <Link href={data.url}>
-                            <h1 className="font-semibold text-lg text-gray-800 text-left hover:text-green-700 hover:underline cursor-pointer">{data.caption}</h1>
+                            <h1 className="text-lg font-semibold text-left text-gray-800 cursor-pointer hover:text-green-700 hover:underline">{data.caption}</h1>
                         </Link>
                         {data.stack.map((item, index) => (
-                            <h1 className="font-medium text-sm text-gray-500 text-left inline mr-2" key={index}>{item}</h1>
+                            <h1 className="inline mr-2 text-sm font-medium text-left text-gray-500" key={index}>{item}</h1>
                         ))}
                     </div>
                     <div className="flex-initial">
                         {data.type === 'Website' ? (
-                            <p className="bg-green-700 text-white text-sm rounded-full px-4 py-2 w-min">{data.type}</p>
+                            <p className="px-4 py-2 text-sm text-white bg-green-700 rounded-full w-min">{data.type}</p>
                         ) : (
-                            <p className="bg-blue-700 text-white text-sm rounded-full px-4 py-2 w-min">{data.type}</p>
+                            <p className="px-4 py-2 text-sm text-white bg-blue-700 rounded-full w-min">{data.type}</p>
                         )}
                     </div>
                 </div>

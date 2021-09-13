@@ -79,7 +79,7 @@ export default function BlogTemplate({ frontmatter, markdownBody, titleBlog }) {
               src={image_src + frontmatter.image}
               alt={frontmatter.image}
               class="py-5 lg:w-4/5"
-            ></img>
+            />
             <p class="font-normal text-lg text-black text-left my-5">
               {/* <ReactMarkdown
                             source={markdownBody}
