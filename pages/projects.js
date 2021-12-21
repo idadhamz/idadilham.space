@@ -2,7 +2,7 @@ import listProjects from "@/data/projects";
 
 import MetaHead from "@/components/head";
 import Nav from "@/components/Nav";
-import ProjectItem from "@/components/projectItem";
+import ProjectItem from "@/components/ProjectItem";
 
 export default function Projects() {
   const data = {
