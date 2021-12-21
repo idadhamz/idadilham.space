@@ -1,105 +1,49 @@
-import * as React from 'react'
-import matter from 'gray-matter'
-import Markdown from 'markdown-to-jsx'
-const glob = require('glob')
+import * as React from "react";
+import matter from "gray-matter";
+import Markdown from "markdown-to-jsx";
+const glob = require("glob");
 
-import Layout from '../../components/layout'
+import Layout from "@/components/layout";
+import reformatDate from "helpers/reformatDate";
 
 export default function BlogTemplate({ frontmatter, markdownBody, titleBlog }) {
-  function reformatDate(fullDate) {
-    const date = new Date(fullDate)
+  const image_src = "/assets/uploads";
 
-    let tahun = date.getFullYear()
-    let bulan = date.getMonth()
-    let tanggal = date.getDate()
-
-    switch (bulan) {
-      case 0:
-        bulan = 'Jan'
-        break
-      case 1:
-        bulan = 'Feb'
-        break
-      case 2:
-        bulan = 'Mar'
-        break
-      case 3:
-        bulan = 'Apr'
-        break
-      case 4:
-        bulan = 'Mei'
-        break
-      case 5:
-        bulan = 'Jun'
-        break
-      case 6:
-        bulan = 'Jul'
-        break
-      case 7:
-        bulan = 'Agt'
-        break
-      case 8:
-        bulan = 'Sept'
-        break
-      case 9:
-        bulan = 'Okt'
-        break
-      case 10:
-        bulan = 'Nov'
-        break
-      case 11:
-        bulan = 'Des'
-        break
-    }
-
-    const date_indo = tanggal + ' ' + bulan + ' ' + tahun
-
-    return date_indo
-  }
-
-  const image_src = '/assets/uploads'
-
-  if (!frontmatter) return <></>
+  if (!frontmatter) return <></>;
 
   return (
     <Layout titleBlog={titleBlog}>
-      <div class="col-span-1 my-5 p-2">
+      <div className="col-span-1 p-2 my-5">
         <div>
           <div>
-            <h1 class="font-bold text-4xl text-black text-left cursor-pointer">
+            <h1 className="text-4xl font-bold text-left text-black cursor-pointer">
               {frontmatter.title}
             </h1>
-            <h2 class="font-normal text-lg text-black text-left py-5">
-              Date{' '}
-              <span class="font-bold pl-10">
+            <h2 className="py-5 text-lg font-normal text-left text-black">
+              Date{" "}
+              <span className="pl-10 font-bold">
                 {reformatDate(frontmatter.date)}
               </span>
             </h2>
             <img
               src={image_src + frontmatter.image}
               alt={frontmatter.image}
-              class="py-5 lg:w-4/5"
+              className="py-5 lg:w-4/5"
             />
-            <p class="font-normal text-lg text-black text-left my-5">
-              {/* <ReactMarkdown
-                            source={markdownBody}
-                        /> */}
-              {/* <Markdown 
-                          children={markdownBody}
-                        /> */}
+            <p className="my-5 text-lg font-normal text-left text-black">
               <Markdown>{markdownBody}</Markdown>
             </p>
           </div>
         </div>
       </div>
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps({ ...ctx }) {
-  const { slug } = ctx.params
-  const content = await import(`../../content/blogs/${slug}.md`)
-  const data = matter(content.default)
+  const { slug } = ctx.params;
+  const content = await import(`../../content/blogs/${slug}.md`);
+  const data = matter(content.default);
 
   return {
     props: {
@@ -107,21 +51,21 @@ export async function getStaticProps({ ...ctx }) {
       markdownBody: data.content,
       titleBlog: data.data.title,
     },
-  }
+  };
 }
 
 export async function getStaticPaths() {
-  const blogs = glob.sync('content/blogs/**/*.md')
-  console.log(blogs)
+  const blogs = glob.sync("content/blogs/**/*.md");
+  console.log(blogs);
 
   const blogSlugs = blogs.map((file) =>
-    file.split('/')[2].replace(/ /g, '-').slice(0, -3).trim(),
-  )
+    file.split("/")[2].replace(/ /g, "-").slice(0, -3).trim()
+  );
 
-  const paths = blogSlugs.map((slug) => `/blog/${slug}`)
-  console.log(paths)
+  const paths = blogSlugs.map((slug) => `/blog/${slug}`);
+  console.log(paths);
   return {
     paths,
     fallback: false,
-  }
+  };
 }
