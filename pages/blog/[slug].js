@@ -56,14 +56,10 @@ export async function getStaticProps({ ...ctx }) {
 
 export async function getStaticPaths() {
   const blogs = glob.sync("content/blogs/**/*.md");
-  console.log(blogs);
-
   const blogSlugs = blogs.map((file) =>
     file.split("/")[2].replace(/ /g, "-").slice(0, -3).trim()
   );
-
   const paths = blogSlugs.map((slug) => `/blog/${slug}`);
-  console.log(paths);
   return {
     paths,
     fallback: false,

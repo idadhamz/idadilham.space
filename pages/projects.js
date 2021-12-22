@@ -17,9 +17,9 @@ export default function Projects() {
       <MetaHead data={data} />
 
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-4 lg:divide-x">
+        <div className="grid grid-cols-1 lg:grid-cols-5 lg:divide-x">
           <Nav />
-          <div className="col-span-3">
+          <div className="col-span-4">
             <div className="p-5 lg:p-12">
               <h1 className="mb-3 text-3xl antialiased lg:text-3xl">
                 <span className="font-bold text-green-700">All</span> Projects

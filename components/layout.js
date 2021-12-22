@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Nav from "@/components/Nav";
-
-import Link from "next/link";
-
+import BackText from "@/components/Molecules/BackText";
 export default function Layout(props) {
   return (
     <div>
@@ -22,27 +20,11 @@ export default function Layout(props) {
           <Nav />
           <div className="col-span-3">
             <div className="p-5 lg:p-12">
-              <Link href="/blog">
-                <h1 className="mb-10 text-xl antialiased text-gray-700 cursor-pointer lg:text-xl hover:underline">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    className="inline h-7 w-7"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M7 16l-4-4m0 0l4-4m-4 4h18"
-                    />
-                  </svg>
-                  <span className="px-2 font-normal text-gray-700">
-                    Back to blog list
-                  </span>
-                </h1>
-              </Link>
+              <BackText
+                href="blog"
+                text="Back to blogs list"
+                d_icon="M7 16l-4-4m0 0l4-4m-4 4h18"
+              />
               {props.children}
             </div>
           </div>

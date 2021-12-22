@@ -1,78 +1,28 @@
 import Link from "next/link";
 
+import reformatDate from "helpers/reformatDate";
+
 export default function BlogList({ allBlogs }) {
-  function reformatDate(fullDate) {
-    const date = new Date(fullDate);
-
-    let tahun = date.getFullYear();
-    let bulan = date.getMonth();
-    let tanggal = date.getDate();
-
-    switch (bulan) {
-      case 0:
-        bulan = "Jan";
-        break;
-      case 1:
-        bulan = "Feb";
-        break;
-      case 2:
-        bulan = "Mar";
-        break;
-      case 3:
-        bulan = "Apr";
-        break;
-      case 4:
-        bulan = "Mei";
-        break;
-      case 5:
-        bulan = "Jun";
-        break;
-      case 6:
-        bulan = "Jul";
-        break;
-      case 7:
-        bulan = "Agt";
-        break;
-      case 8:
-        bulan = "Sept";
-        break;
-      case 9:
-        bulan = "Okt";
-        break;
-      case 10:
-        bulan = "Nov";
-        break;
-      case 11:
-        bulan = "Des";
-        break;
-    }
-
-    const date_indo = bulan + " " + tanggal + ", " + tahun;
-
-    return date_indo;
-  }
+  const image_src = "/assets/uploads";
 
   return (
-    <div className="grid grid-cols-1 my-10 md:grid-cols-2">
+    <>
       {allBlogs.map((blog, index) => (
-        <div
-          className="w-full col-span-1 mb-3 mr-5 lg:col-span-1 md:w-auto"
-          key={index}
-        >
-          <div className="px-3 py-5 bg-green-400 border rounded-lg cursor-pointer hover:bg-green-300 lg:w-full">
+        <div className="w-full col-span-1 mb-3 mr-5 md:w-auto" key={index}>
+          <div className="p-8 transition duration-500 bg-gray-200 border-2 border-white cursor-pointer lg:w-full rounded-xl hover:border-green-500">
             <Link key={blog.slug} href={{ pathname: `/blog/${blog.slug}` }}>
-              <div className="flex flex-col justify-between px-3 py-1 md:flex-row">
-                <div className="flex-initial pr-5">
-                  <p className="text-lg font-semibold tracking-wide text-white md:text-xl">
-                    {blog.frontmatter.title}
-                  </p>
-                  <p className="my-1 font-normal tracking-wide text-white text-md">
+              <div className="flex flex-col">
+                <img
+                  src={image_src + blog.frontmatter.image}
+                  alt={blog.frontmatter.image}
+                  className="object-cover w-full py-5 max-h-96"
+                />
+                <div className="flex flex-col gap-2 text-center">
+                  <p className="text-lg font-normal text-gray-800">
                     {reformatDate(blog.frontmatter.date)}
                   </p>
-                </div>
-                <div className="flex-initial">
-                  <p className="w-full h-auto px-5 py-3 my-3 text-center text-white bg-green-700 rounded-full hover:bg-green-500">
-                    Read
+                  <p className="text-2xl font-bold text-gray-800 truncate">
+                    {blog.frontmatter.title}
                   </p>
                 </div>
               </div>
@@ -80,6 +30,6 @@ export default function BlogList({ allBlogs }) {
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 }
