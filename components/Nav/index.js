@@ -13,7 +13,7 @@ export default function Nav() {
           <img
             src="/assets/img/fotoVector.jpg"
             alt="foto-dadi-nav"
-            className="object-cover w-20 h-auto p-2 my-4 border border-gray-300 cursor-pointer lg:w-20 lg:h-auto lg:m-4 rounded-2xl hover:border-green-700"
+            className="object-cover w-20 h-auto p-2 my-4 border-2 border-gray-300 cursor-pointer lg:w-20 lg:h-auto lg:m-4 rounded-2xl hover:border-green-500"
           ></img>
         </Link>
         <NavContent />

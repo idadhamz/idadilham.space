@@ -1,11 +1,10 @@
 import matter from "gray-matter";
-import MetaHead from "@/components/head";
-import Nav from "@/components/Nav";
 import BlogList from "@/components/blogList";
 import Hero from "@/components/Hero";
 import WorkHistory from "@/components/WorkHistory";
 import LatestProject from "@/components/LatestProject";
 import SeeAll from "@/components/Molecules/SeeAll";
+import Layout from "@/components/layout";
 
 export default function Home(props) {
   const data = {
@@ -16,42 +15,32 @@ export default function Home(props) {
   };
 
   return (
-    <div>
-      <MetaHead data={data} />
-
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-5 lg:divide-x">
-          <Nav />
+    <Layout data={data}>
+      <div className="p-5 space-y-10 lg:p-12">
+        <Hero />
+        <WorkHistory />
+        <LatestProject />
+        <div className="grid grid-cols-1 lg:grid-cols-4">
           <div className="col-span-4">
-            <div className="p-5 space-y-10 lg:p-12">
-              <Hero />
-              <WorkHistory />
-              <LatestProject />
-              <div className="grid grid-cols-1 lg:grid-cols-4">
-                <div className="col-span-4">
-                  <div className="flex items-center justify-between">
-                    <h1 className="my-5 text-2xl antialiased text-gray-700 lg:text-3xl">
-                      <span className="font-bold text-green-700">Latest</span>{" "}
-                      Blogs
-                    </h1>
-                    <SeeAll
-                      href="blog"
-                      text="See All Blogs"
-                      d_icon="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </div>
-                  <div className="col-span-4">
-                    <div className="grid grid-cols-1 my-10 md:grid-cols-2">
-                      <BlogList allBlogs={props.allBlogs.slice(0, 2)} />
-                    </div>
-                  </div>
-                </div>
+            <div className="flex items-center justify-between">
+              <h1 className="my-5 text-2xl antialiased text-gray-700 lg:text-3xl">
+                <span className="font-bold text-green-700">Latest</span> Blogs
+              </h1>
+              <SeeAll
+                href="blog"
+                text="See All Blogs"
+                d_icon="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </div>
+            <div className="col-span-4">
+              <div className="grid grid-cols-1 my-10 md:grid-cols-2">
+                <BlogList allBlogs={props.allBlogs.slice(0, 2)} />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }
 

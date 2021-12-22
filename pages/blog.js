@@ -1,7 +1,5 @@
 import matter from "gray-matter";
-
-import MetaHead from "@/components/head";
-import Nav from "@/components/Nav";
+import Layout from "@/components/layout";
 import BlogList from "@/components/blogList";
 
 export default function Blog(props) {
@@ -13,25 +11,16 @@ export default function Blog(props) {
   };
 
   return (
-    <div>
-      <MetaHead data={data} />
-
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-5 lg:divide-x">
-          <Nav />
-          <div className="col-span-4">
-            <div className="p-5 lg:p-12">
-              <h1 className="mb-3 text-3xl antialiased lg:text-3xl">
-                <span className="font-bold text-green-700">Blog</span> Story
-              </h1>
-              <div className="grid grid-cols-1 my-10 md:grid-cols-2">
-                <BlogList allBlogs={props.allBlogs} />
-              </div>
-            </div>
-          </div>
+    <Layout data={data}>
+      <div className="p-5 lg:p-12">
+        <h1 className="mb-3 text-3xl antialiased lg:text-3xl">
+          <span className="font-bold text-green-700">Blog</span> Story
+        </h1>
+        <div className="grid grid-cols-1 my-10 md:grid-cols-2">
+          <BlogList allBlogs={props.allBlogs} />
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }
 

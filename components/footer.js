@@ -3,30 +3,84 @@ import Link from "next/link";
 export default function Footer() {
   const listFooter = [
     { text: "Instagram", href: "https://www.instagram.com/idadcode/" },
-    { text: "Instagram", href: "https://www.instagram.com/idadcode/" },
-    { text: "Instagram", href: "https://www.instagram.com/idadcode/" },
-    { text: "Instagram", href: "https://www.instagram.com/idadcode/" },
+    { text: "Twitter", href: "https://twitter.com/Idadilham" },
+    { text: "Github", href: "https://github.com/idadhamz" },
+    { text: "Medium", href: "https://idadilham.medium.com/" },
+    { text: "LinkedIn", href: "https://www.linkedin.com/in/idadilham/" },
   ];
 
+  const techStack = [
+    {
+      text: "Next.js",
+      url: "https://nextjs.org/",
+    },
+    {
+      text: "Tailwind CSS",
+      url: "https://tailwindcss.com/",
+    },
+    {
+      text: "Forestry IO",
+      url: "https://forestry.io/",
+    },
+    {
+      text: "Netlify",
+      url: "https://www.netlify.com/",
+    },
+  ];
+
+  const urlExternal = (text, url) => {
+    return (
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        <span className="text-lg font-medium text-blue-500 underline">
+          {text}
+        </span>
+      </a>
+    );
+  };
+
+  const YEAR = new Date().getFullYear();
+
   return (
-    <div className="p-10">
-      <Link href="/">
-        <img
-          src="https://instagram.fcgk9-2.fna.fbcdn.net/v/t51.2885-19/s320x320/127091039_377152586727817_703580884705788533_n.jpg?_nc_ht=instagram.fcgk9-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=lq-a4PO0nqEAX_XFMii&tp=1&oh=2a3578eb305955027835205b9fb46b65&oe=601CFBAE"
-          alt="foto-dadi-nav"
-          className="w-20 h-auto my-4 lg:w-20 lg:h-auto lg:m-4 object-cover rounded-full border-2 border-gray-300 hover:border-green-700 cursor-pointer float-left"
-        ></img>
-      </Link>
-      <div className="float-right my-auto">
-        {listFooter.map((data) => (
-          <Link href={data.href}>
-            <h1 className="mr-2 font-medium text-sm text-gray-500 text-left inline">
-              {data.text}
-            </h1>
+    <div className="py-12 space-y-4 border-t border-gray-200 sm:p-10">
+      <div className="flex flex-col gap-2">
+        <div className="flex flex-col items-center justify-between sm:flex-row">
+          <Link href="/">
+            <img
+              src="/assets/img/fotoVector.jpg"
+              alt="foto-dadi-nav"
+              className="object-cover w-20 h-auto p-2 my-4 border-2 border-gray-300 cursor-pointer lg:w-20 lg:h-auto rounded-2xl hover:border-green-500"
+            />
           </Link>
-        ))}
+          <div className="flex flex-row gap-4">
+            {listFooter.map((data) => (
+              <a href={data.href} target="_blank" rel="noopener noreferrer">
+                <h1 className="text-lg font-medium text-gray-700 cursor-pointer hover:text-green-500">
+                  {data.text}
+                </h1>
+              </a>
+            ))}
+          </div>
+        </div>
+        <div className="flex flex-col p-4 space-y-2 text-center sm:text-left sm:p-0">
+          <p className="text-lg font-medium">
+            Made using {urlExternal(techStack[0].text, techStack[0].url)},{" "}
+            {urlExternal(techStack[1].text, techStack[1].url)} and CMS from{" "}
+            {urlExternal(techStack[2].text, techStack[2].url)}. Hosted on{" "}
+            {urlExternal(techStack[3].text, techStack[3].url)}.
+          </p>
+          <p className="text-lg font-medium">
+            Code licensed under{" "}
+            {urlExternal(
+              "MIT License",
+              "https://github.com/idadhamz/idadcode-web/blob/main/LICENSE"
+            )}
+            .
+          </p>
+          <p className="text-lg font-medium">
+            © {YEAR}—Dadi Ilham S. version 1.0
+          </p>
+        </div>
       </div>
-      {/* </ul> */}
     </div>
   );
 }
