@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function BackText({ href, text, d_icon }) {
   return (
     <Link href={`/${href}`}>
-      <h1 className="mb-10 text-xl antialiased text-gray-700 cursor-pointer lg:text-xl hover:underline">
+      <h1 className="mb-10 text-xl antialiased cursor-pointer lg:text-xl hover:underline">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -18,7 +18,7 @@ export default function BackText({ href, text, d_icon }) {
             d={d_icon}
           />
         </svg>
-        <span className="px-2 font-normal text-gray-700">{text}</span>
+        <span className="px-2 font-normal">{text}</span>
       </h1>
     </Link>
   );
