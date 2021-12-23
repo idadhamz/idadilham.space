@@ -4,7 +4,7 @@ import MetaHead from "@/components/head";
 
 export default function Layout(props) {
   return (
-    <div className="dark:bg-gray-900">
+    <div className="dark:bg-gray-900 bg-gray-100">
       <MetaHead data={props.data} />
 
       <div className="container mx-auto">

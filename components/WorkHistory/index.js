@@ -12,7 +12,7 @@ export default function WorkHistory() {
       <div className="container flex flex-wrap mx-auto">
         {listWork.map((data, index) => (
           <div
-            className="relative flex items-center pt-5 pb-5 md:w-1/2"
+            className="relative flex items-center pt-5 pb-5 md:w-1/3"
             key={index}
           >
             <div className="relative z-10 inline-flex items-center justify-center flex-shrink-0 w-12 h-12 text-lg font-medium text-white bg-green-500 rounded-full sm:mt-0 title-font">
@@ -23,7 +23,7 @@ export default function WorkHistory() {
                 <h1 className="pr-5 mb-1 text-xl font-bold title-font">
                   {data.job}
                 </h1>
-                <p>
+                <p className="text-lg">
                   <span className="font-semibold text-green-700 dark:text-green-400 hover:underline">
                     <a href={data.url}> {data.company}</a>
                   </span>{" "}

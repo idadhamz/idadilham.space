@@ -8,7 +8,7 @@ export default function BlogList({ allBlogs }) {
   return (
     <>
       {allBlogs.map((blog, index) => (
-        <div className="w-full col-span-1 mb-3 mr-5 md:w-auto" key={index}>
+        <div className="w-full col-span-1 mb-5 mr-5 md:w-auto" key={index}>
           <div className="p-8 transition duration-500 bg-gray-200 dark:bg-gray-600 hover:border-2 cursor-pointer lg:w-full rounded-xl hover:border-green-500">
             <Link key={blog.slug} href={{ pathname: `/blog/${blog.slug}` }}>
               <div className="flex flex-col">
