@@ -12,10 +12,13 @@ export default function About() {
     <Layout data={data}>
       <div className="p-5 lg:p-12">
         <h1 className="mb-10 text-3xl antialiased lg:text-3xl">
-          <span className="font-bold text-green-700">About</span> Me
+          <span className="font-bold text-green-700 dark:text-green-400">
+            About
+          </span>{" "}
+          Me
         </h1>
-        <h2 className="text-xl antialiased tracking-wide text-gray-700 lg:text-xl">
-          <span className="font-normal text-black">
+        <h2 className="text-xl antialiased tracking-wide lg:text-xl">
+          <span className="font-normal">
             This section is still under construction ✌🏻
           </span>
         </h2>

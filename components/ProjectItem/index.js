@@ -2,7 +2,7 @@ export default function ProjectItem({ data }) {
   return (
     <div className="w-full col-span-1 my-5 mr-5 md:w-auto">
       <a href={data.url} target="_blank" rel="noopener noreferrer">
-        <div className="px-8 py-12 space-y-8 transition duration-500 bg-gray-200 border-2 border-white rounded-xl hover:border-green-500">
+        <div className="px-8 py-12 space-y-8 transition duration-500 bg-gray-200 dark:bg-gray-600 hover:border-2 rounded-xl hover:border-green-500">
           <div className="w-auto h-auto">
             <img
               src={data.src}
@@ -11,7 +11,7 @@ export default function ProjectItem({ data }) {
             />
           </div>
           <div className="flex flex-col gap-4">
-            <h1 className="text-2xl font-bold text-center text-gray-800 truncate">
+            <h1 className="text-2xl font-bold text-center truncate">
               {data.caption}
             </h1>
             <div className="flex justify-center gap-2">

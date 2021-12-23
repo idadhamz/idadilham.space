@@ -54,7 +54,7 @@ export default function Footer() {
           <div className="flex flex-row gap-4">
             {listFooter.map((data) => (
               <a href={data.href} target="_blank" rel="noopener noreferrer">
-                <h1 className="text-lg font-medium text-gray-700 cursor-pointer hover:text-green-500">
+                <h1 className="text-lg font-medium cursor-pointer hover:text-green-500">
                   {data.text}
                 </h1>
               </a>

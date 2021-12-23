@@ -14,7 +14,10 @@ export default function Blog(props) {
     <Layout data={data}>
       <div className="p-5 lg:p-12">
         <h1 className="mb-3 text-3xl antialiased lg:text-3xl">
-          <span className="font-bold text-green-700">Blog</span> Story
+          <span className="font-bold text-green-700 dark:text-green-400">
+            Blog
+          </span>{" "}
+          Story
         </h1>
         <div className="grid grid-cols-1 my-10 md:grid-cols-2">
           <BlogList allBlogs={props.allBlogs} />

@@ -7,8 +7,11 @@ export default function LatestProject() {
     <div className="grid grid-cols-1 lg:grid-cols-4">
       <div className="col-span-4">
         <div className="flex items-center justify-between">
-          <h1 className="my-5 text-2xl antialiased text-gray-700 lg:text-3xl">
-            <span className="font-bold text-green-700">Latest</span> Projects
+          <h1 className="my-5 text-2xl antialiased lg:text-3xl">
+            <span className="font-bold text-green-700 dark:text-green-400">
+              Latest
+            </span>{" "}
+            Projects
           </h1>
           <SeeAll
             href="projects"

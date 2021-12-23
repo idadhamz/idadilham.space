@@ -9,7 +9,7 @@ export default function BlogList({ allBlogs }) {
     <>
       {allBlogs.map((blog, index) => (
         <div className="w-full col-span-1 mb-3 mr-5 md:w-auto" key={index}>
-          <div className="p-8 transition duration-500 bg-gray-200 border-2 border-white cursor-pointer lg:w-full rounded-xl hover:border-green-500">
+          <div className="p-8 transition duration-500 bg-gray-200 dark:bg-gray-600 hover:border-2 cursor-pointer lg:w-full rounded-xl hover:border-green-500">
             <Link key={blog.slug} href={{ pathname: `/blog/${blog.slug}` }}>
               <div className="flex flex-col">
                 <img
@@ -18,10 +18,10 @@ export default function BlogList({ allBlogs }) {
                   className="object-cover w-full py-5 max-h-96"
                 />
                 <div className="flex flex-col gap-2 text-center">
-                  <p className="text-lg font-normal text-gray-800">
+                  <p className="text-lg font-normal">
                     {reformatDate(blog.frontmatter.date)}
                   </p>
-                  <p className="text-2xl font-bold text-gray-800 truncate">
+                  <p className="text-2xl font-bold truncate">
                     {blog.frontmatter.title}
                   </p>
                 </div>

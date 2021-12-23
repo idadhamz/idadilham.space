@@ -15,7 +15,10 @@ export default function Projects() {
     <Layout data={data}>
       <div className="p-5 lg:p-12">
         <h1 className="mb-3 text-3xl antialiased lg:text-3xl">
-          <span className="font-bold text-green-700">All</span> Projects
+          <span className="font-bold text-green-700 dark:text-green-400">
+            All
+          </span>{" "}
+          Projects
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           {listProjects
