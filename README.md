@@ -1,8 +1,10 @@
 # Idadilham.site
 
-<p float="left">
-  <img src="/public/assets/img/HomePage.PNG" alt='preview mobile' width="500">
-  <img src="/public/assets/img/MobileHomePage.PNG" alt='preview mobile' width="150">
+<p align="left">
+  <img src="/public/assets/img/HomePage.PNG" alt='preview mobile'>
+</p>
+<p align="left">
+  <img src="/public/assets/img/MobileHomePage.PNG" alt='preview mobile' width="300">
 </p>
 
 <p align="left">
