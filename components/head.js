@@ -21,6 +21,18 @@ export default function index({ data }) {
       />
       <meta property="og:description" content={data.description} key="ogdesc" />
       <meta property="og:url" content={data.url} key="ogurl" />
+
+      <meta
+        name="twitter:card"
+        content="https://idadilham.site/assets/img/Idadilham.site.png"
+      />
+      <meta name="twitter:site" content="@idadilham" />
+      <meta name="twitter:title" content={data.title} />
+      <meta name="twitter:description" content={data.description} />
+      <meta
+        name="twitter:image"
+        content="https://idadilham.site/assets/img/Idadilham.site.png"
+      />
     </Head>
   );
 }
