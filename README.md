@@ -8,7 +8,7 @@
 </p>
 
 <p align="left">
-  Code for my personal website [<a href='https://idadilham.site'>Idadilham.site</a>] 🚀 using <a href='https://nextjs.org/'>Next.js</a>, <a href='http://tailwindcss.com/'>Tailwind CSS</a> and <a href='https://forestry.io/'>Forestry IO</a>
+  Code for my personal website [<a href='https://idadilham.site'>Idadilham.site</a>] 🚀 using <a href='https://nextjs.org/'>Next.js</a>, <a href='http://tailwindcss.com/'>Tailwind CSS</a>, <a href='https://forestry.io/'>Forestry IO</a> and Hosted on <a href='https://www.netlify.com/'>Netlify</a> 
 </p>
 
 ## Live
