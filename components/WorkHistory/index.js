@@ -3,7 +3,7 @@ import listWork from "@/data/work";
 export default function WorkHistory() {
   return (
     <section className="body-font">
-      <h1 className="my-5 text-2xl antialiased lg:text-3xl">
+      <h1 className="my-5 text-3xl antialiased">
         <span className="font-bold text-green-700 dark:text-green-400">
           Work
         </span>{" "}

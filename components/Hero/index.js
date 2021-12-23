@@ -21,7 +21,7 @@ export default function Hero() {
           <h1 className="my-5 text-4xl antialiased lg:text-4xl">
             <span className="font-bold">Dadi Ilham Setiadi</span>
           </h1>
-          <p className="leading-relaxed text-xl">
+          <p className="leading-relaxed text-lg sm:text-xl">
             I am a technology enthusiast and currently final year Information
             System Student at UIN Syarif Hidayatullah Jakarta. Love to explore
             learning something new, traveling a new places and also like to
