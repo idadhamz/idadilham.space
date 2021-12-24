@@ -31,7 +31,7 @@ export default function Footer() {
   const urlExternal = (text, url) => {
     return (
       <a href={url} target="_blank" rel="noopener noreferrer">
-        <span className="text-base sm:text-xl font-medium text-blue-500 underline">
+        <span className="text-base font-medium text-blue-700 underline sm:text-xl dark:text-blue-300">
           {text}
         </span>
       </a>
@@ -48,7 +48,7 @@ export default function Footer() {
             <img
               src="/assets/img/fotoVector.jpg"
               alt="foto-dadi-nav"
-              className="object-cover w-28 h-auto p-2 my-4 border-2 border-gray-300 cursor-pointer lg:w-28 lg:h-auto rounded-2xl hover:border-green-500"
+              className="object-cover h-auto p-2 my-4 border-2 border-gray-300 cursor-pointer w-28 lg:w-28 lg:h-auto rounded-2xl hover:border-green-500"
             />
           </Link>
           <div className="flex flex-row gap-4">
@@ -59,7 +59,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 key={index}
               >
-                <h1 className="text-base sm:text-xl font-medium cursor-pointer hover:text-green-500">
+                <h1 className="text-base font-medium cursor-pointer sm:text-xl hover:text-green-500">
                   {data.text}
                 </h1>
               </a>
@@ -67,13 +67,13 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col p-4 space-y-2 text-center sm:text-left sm:p-0">
-          <p className="text-base sm:text-xl font-medium">
+          <p className="text-base font-medium sm:text-xl">
             Made using {urlExternal(techStack[0].text, techStack[0].url)},{" "}
             {urlExternal(techStack[1].text, techStack[1].url)} and CMS from{" "}
             {urlExternal(techStack[2].text, techStack[2].url)}. Hosted on{" "}
             {urlExternal(techStack[3].text, techStack[3].url)}.
           </p>
-          <p className="text-base sm:text-xl font-medium">
+          <p className="text-base font-medium sm:text-xl">
             Code licensed under{" "}
             {urlExternal(
               "MIT License",
@@ -81,7 +81,7 @@ export default function Footer() {
             )}
             .
           </p>
-          <p className="text-base sm:text-xl font-medium">
+          <p className="text-base font-medium sm:text-xl">
             © {YEAR}—Dadi Ilham S. version 1.0
           </p>
         </div>
