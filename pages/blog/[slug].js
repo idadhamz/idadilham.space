@@ -28,12 +28,12 @@ export default function BlogTemplate({ frontmatter, markdownBody, titleBlog }) {
         <div className="col-span-1 p-2 my-5">
           <div>
             <div>
-              <h1 className="text-4xl font-bold text-left cursor-pointer">
+              <h1 className="text-4xl font-semibold text-left cursor-pointer">
                 {frontmatter.title}
               </h1>
               <h2 className="py-5 text-lg font-normal text-left">
                 Date{" "}
-                <span className="pl-10 font-bold">
+                <span className="pl-10 font-semibold">
                   {reformatDate(frontmatter.date)}
                 </span>
               </h2>

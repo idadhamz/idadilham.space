@@ -21,7 +21,7 @@ export default function BlogList({ allBlogs }) {
                   <p className="text-base sm:text-lg font-normal">
                     {reformatDate(blog.frontmatter.date)}
                   </p>
-                  <p className="text-lg sm:text-2xl font-bold truncate">
+                  <p className="text-lg sm:text-2xl font-semibold truncate">
                     {blog.frontmatter.title}
                   </p>
                 </div>

@@ -9,26 +9,26 @@ export default function Hero() {
         />
       </div>
       <div className="col-span-3 lg:my-auto">
-        <div className="my-10 lg:my-auto lg:mx-20">
+        <div className="my-10 lg:space-y-6 lg:my-auto lg:mx-20">
           <div className="my-6 space-x-2">
-            <span className="w-full px-4 py-2 text-base text-indigo-500 border border-indigo-500 rounded-full">
+            <span className="w-full px-4 py-2 text-base font-semibold text-white bg-indigo-500 rounded-2xl">
               Software Engineer
             </span>
-            <span className="w-full px-4 py-2 text-base text-green-500 border border-green-500 rounded-full">
+            <span className="w-full px-4 py-2 text-base font-semibold text-white bg-green-500 rounded-2xl">
               UI/UX Enthusiast
             </span>
           </div>
           <h1 className="my-5 text-4xl antialiased lg:text-4xl">
-            <span className="font-bold">Dadi Ilham Setiadi</span>
+            <span className="font-semibold">Dadi Ilham Setiadi</span>
           </h1>
-          <p className="leading-relaxed text-lg sm:text-xl">
+          <p className="text-lg sm:leading-relaxed sm:text-xl">
             I am a technology enthusiast and currently final year Information
             System Student at UIN Syarif Hidayatullah Jakarta. Love to explore
             learning something new, traveling a new places and also like to
             reading. <br></br>
             <br></br>
             Let's get acquainted with me through{" "}
-            <span className="font-bold text-blue-700 transition duration-300 hover:underline">
+            <span className="font-semibold text-blue-700 transition duration-300 hover:underline">
               <a
                 href="https://www.linkedin.com/in/idadilham/"
                 target="_blank"
@@ -38,7 +38,7 @@ export default function Hero() {
               </a>
             </span>{" "}
             or{" "}
-            <span className="font-bold text-purple-700 transition duration-300 hover:underline">
+            <span className="font-semibold text-purple-700 transition duration-300 hover:underline">
               <a
                 href="https://www.instagram.com/idadcode/"
                 target="_blank"

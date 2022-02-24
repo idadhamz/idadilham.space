@@ -4,7 +4,7 @@ import MetaHead from "@/components/head";
 
 export default function Layout(props) {
   return (
-    <div className="dark:bg-gray-900 bg-gray-100">
+    <div className="bg-gray-100 dark:bg-gray-900">
       <MetaHead data={props.data} />
 
       <div className="container mx-auto">
@@ -12,7 +12,7 @@ export default function Layout(props) {
           <div className="flex flex-col gap-4">
             <Nav />
           </div>
-          <div className="col-span-4 min-h-screen">
+          <div className="min-h-screen col-span-4 font-sans">
             {props.children}
             <Footer />
           </div>

@@ -10,7 +10,7 @@ const listProjects = [
   },
   {
     id: 2,
-    src: "/assets/img/projects/aisAlBannaPorto.png",
+    src: "/assets/img/projects/aisAlBannaPorto.PNG",
     altText: "ais-porto",
     caption: "AIS Al - Banna Admin",
     url: "http://aisalbanna.herokuapp.com/",
@@ -69,7 +69,7 @@ const listProjects = [
     caption: "Daily Vid Landing Page",
     url: "https://dailyvid.netlify.app/",
     type: "Website",
-    stack: ["HTML", "CSS", "Javascript", "Web Components"],
+    stack: ["HTML", "CSS", "Javascript"],
   },
 ];
 

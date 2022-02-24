@@ -23,7 +23,7 @@ export default function About() {
       <div className="py-12 space-y-12">
         <div className="px-5 lg:px-12">
           <h1 className="mb-10 text-4xl antialiased">
-            <span className="font-bold text-green-700 dark:text-green-400">
+            <span className="font-semibold text-green-700 dark:text-green-400">
               About
             </span>
           </h1>
@@ -67,7 +67,7 @@ export default function About() {
         </div>
         <div className="px-5 lg:px-12">
           <h1 className="mb-10 text-4xl antialiased">
-            <span className="font-bold text-green-700 dark:text-green-400">
+            <span className="font-semibold text-green-700 dark:text-green-400">
               Contact
             </span>
           </h1>

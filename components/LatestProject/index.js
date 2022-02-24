@@ -7,8 +7,8 @@ export default function LatestProject() {
     <div className="grid grid-cols-1 lg:grid-cols-4">
       <div className="col-span-4">
         <div className="flex items-center justify-between">
-          <h1 className="my-5 antialiased text-3xl">
-            <span className="font-bold text-green-700 dark:text-green-400">
+          <h1 className="my-5 text-3xl antialiased">
+            <span className="font-semibold text-green-700 dark:text-green-400">
               Latest
             </span>{" "}
             Projects

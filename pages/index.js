@@ -24,7 +24,7 @@ export default function Home(props) {
           <div className="col-span-4">
             <div className="flex items-center justify-between">
               <h1 className="my-5 antialiased text-3xl">
-                <span className="font-bold text-green-700 dark:text-green-400">
+                <span className="font-semibold text-green-700 dark:text-green-400">
                   Latest
                 </span>{" "}
                 Blogs

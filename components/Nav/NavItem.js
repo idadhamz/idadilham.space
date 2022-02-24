@@ -39,7 +39,7 @@ export default function NavContent() {
           key={index}
         >
           <Link href={data.href}>
-            <p className="w-max p-2 font-sans text-xl font-bold rounded-full cursor-pointer lg:text-xl dark:hover:bg-green-500 hover:bg-green-200 lg:p-4 flex items-center">
+            <p className="w-max p-2 font-sans text-xl font-semibold rounded-full cursor-pointer lg:text-xl dark:hover:bg-green-500 hover:bg-green-200 lg:p-4 flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
