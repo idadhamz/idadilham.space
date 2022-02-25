@@ -22,7 +22,7 @@ export default function About() {
     <Layout data={data}>
       <div className="py-12 space-y-12">
         <div className="px-5 lg:px-12">
-          <h1 className="mb-10 text-4xl antialiased">
+          <h1 className="mb-10 text-2xl sm:text-4xl antialiased">
             <span className="font-semibold text-green-700 dark:text-green-400">
               About
             </span>
@@ -66,7 +66,7 @@ export default function About() {
           </div>
         </div>
         <div className="px-5 lg:px-12">
-          <h1 className="mb-10 text-4xl antialiased">
+          <h1 className="mb-10 text-2xl sm:text-4xl antialiased">
             <span className="font-semibold text-green-700 dark:text-green-400">
               Contact
             </span>

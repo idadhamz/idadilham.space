@@ -13,7 +13,7 @@ export default function Blog(props) {
   return (
     <Layout data={data}>
       <div className="p-5 lg:p-12">
-        <h1 className="mb-3 text-4xl antialiased">
+        <h1 className="mb-3 text-2xl sm:text-4xl antialiased">
           <span className="font-semibold text-green-700 dark:text-green-400">
             Blog
           </span>{" "}

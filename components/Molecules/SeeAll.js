@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function SeeAll({ href, text, d_icon }) {
   return (
     <Link href={`/${href}`}>
-      <h1 className="text-xl antialiased cursor-pointer lg:text-xl hover:underline">
+      <h1 className="text-sm antialiased cursor-pointer lg:text-xl hover:underline">
         <span className="px-2 font-normal">{text}</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"

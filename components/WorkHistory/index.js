@@ -3,7 +3,7 @@ import listWork from "@/data/work";
 export default function WorkHistory() {
   return (
     <section className="body-font">
-      <h1 className="my-5 text-3xl antialiased">
+      <h1 className="my-5 text-xl sm:text-3xl antialiased">
         <span className="font-semibold text-green-700 dark:text-green-400">
           Work
         </span>{" "}
@@ -21,7 +21,7 @@ export default function WorkHistory() {
                 {index + 1}
               </div>
               <div className="flex flex-col items-center flex-grow pl-6 md:pl-2 sm:items-center sm:flex-row">
-                <div className="flex-grow mt-6 sm:pl-6 sm:mt-0 sm:space-y-2">
+                <div className="flex-grow sm:pl-6 sm:space-y-2">
                   <h1 className="mb-1 text-xl font-semibold leading-relaxed title-font">
                     {data.job}
                   </h1>

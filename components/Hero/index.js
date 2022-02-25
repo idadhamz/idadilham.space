@@ -18,10 +18,10 @@ export default function Hero() {
               UI/UX Enthusiast
             </span>
           </div>
-          <h1 className="my-5 text-4xl antialiased lg:text-4xl">
+          <h1 className="my-5 text-2xl antialiased lg:text-4xl">
             <span className="font-semibold">Dadi Ilham Setiadi</span>
           </h1>
-          <p className="text-lg sm:leading-relaxed sm:text-xl">
+          <p className="text-base sm:leading-relaxed sm:text-xl">
             I am a technology enthusiast and currently final year Information
             System Student at UIN Syarif Hidayatullah Jakarta. Love to explore
             learning something new, traveling a new places and also like to
