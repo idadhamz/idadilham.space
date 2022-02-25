@@ -41,9 +41,9 @@ export default function Footer() {
   const YEAR = new Date().getFullYear();
 
   return (
-    <div className="py-12 space-y-4 border-t border-gray-200 sm:p-10">
-      <div className="flex flex-col gap-2">
-        <div className="flex flex-col items-center justify-between sm:flex-row">
+    <div className="py-6 space-y-4 border-t border-gray-200 sm:p-10">
+      <div className="flex flex-col gap-2 p-5 sm:p-0 space-y-4">
+        <div className="flex flex-col sm:items-center justify-between sm:flex-row space-y-4">
           <Link href="/">
             <img
               src="/assets/img/fotoVector.jpg"
@@ -59,21 +59,21 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 key={index}
               >
-                <h1 className="text-base font-medium cursor-pointer sm:text-xl hover:text-green-500">
+                <h1 className="text-sm font-medium cursor-pointer sm:text-xl hover:text-green-500">
                   {data.text}
                 </h1>
               </a>
             ))}
           </div>
         </div>
-        <div className="flex flex-col p-4 space-y-2 text-center sm:text-left sm:p-0">
-          <p className="text-base font-medium sm:text-xl">
+        <div className="flex flex-col space-y-4 text-left">
+          <p className="text-sm font-medium sm:text-xl leading-loose">
             Made using {urlExternal(techStack[0].text, techStack[0].url)},{" "}
             {urlExternal(techStack[1].text, techStack[1].url)} and CMS from{" "}
             {urlExternal(techStack[2].text, techStack[2].url)}. Hosted on{" "}
             {urlExternal(techStack[3].text, techStack[3].url)}.
           </p>
-          <p className="text-base font-medium sm:text-xl">
+          <p className="text-sm font-medium sm:text-xl">
             Code licensed under{" "}
             {urlExternal(
               "MIT License",
@@ -81,7 +81,7 @@ export default function Footer() {
             )}
             .
           </p>
-          <p className="text-base font-medium sm:text-xl">
+          <p className="text-sm font-medium sm:text-xl">
             © {YEAR}—Dadi Ilham S. version 1.0
           </p>
         </div>

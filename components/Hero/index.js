@@ -11,10 +11,10 @@ export default function Hero() {
       <div className="col-span-3 lg:my-auto">
         <div className="my-10 lg:space-y-6 lg:my-auto lg:mx-20">
           <div className="my-6 space-x-2">
-            <span className="w-full px-4 py-2 text-base font-semibold text-white bg-indigo-500 rounded-2xl">
+            <span className="w-full px-4 py-2 text-xs sm:text-sm lg:text-base font-semibold text-white bg-indigo-500 rounded-2xl">
               Software Engineer
             </span>
-            <span className="w-full px-4 py-2 text-base font-semibold text-white bg-green-500 rounded-2xl">
+            <span className="w-full px-4 py-2 text-xs sm:text-sm lg:text-base font-semibold text-white bg-green-500 rounded-2xl">
               UI/UX Enthusiast
             </span>
           </div>
