@@ -7,17 +7,17 @@ export default function ProjectItem({ data }) {
             <img
               src={data.src}
               alt={data.altText}
-              className="object-cover w-full mb-5 h-80 rounded-xl"
+              className="object-contain w-full mb-5 sm:object-cover h-80 rounded-xl"
             />
           </div>
           <div className="flex flex-col gap-4">
-            <h1 className="text-2xl font-semibold text-center truncate">
+            <h1 className="text-lg font-semibold text-center truncate sm:text-2xl">
               {data.caption}
             </h1>
-            <div className="flex justify-center gap-2">
+            <div className="flex flex-wrap justify-center gap-2">
               {data.stack.map((item, index) => (
                 <p
-                  className="px-4 py-2 text-sm text-center text-white bg-green-500 rounded-xl sm:text-base"
+                  className="px-2 py-1 text-sm text-center text-white bg-green-500 sm:px-4 sm:py-2 rounded-xl sm:text-base"
                   key={index}
                 >
                   {item}
