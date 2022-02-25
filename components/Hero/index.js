@@ -5,16 +5,16 @@ export default function Hero() {
         <img
           src="/assets/img/fotoDadi.jfif"
           alt="fotoHero"
-          className="object-cover h-auto w-60 lg:w-80 rounded-xl"
+          className="object-cover h-auto w-60 lg:w-full rounded-xl"
         />
       </div>
       <div className="col-span-3 lg:my-auto">
         <div className="my-10 lg:space-y-6 lg:my-auto lg:mx-20">
           <div className="my-6 space-x-2">
-            <span className="w-full px-4 py-2 text-xs sm:text-sm lg:text-base font-semibold text-white bg-indigo-500 rounded-2xl">
+            <span className="w-full px-4 py-2 text-xs font-semibold text-white bg-indigo-500 sm:text-sm lg:text-base rounded-2xl">
               Software Engineer
             </span>
-            <span className="w-full px-4 py-2 text-xs sm:text-sm lg:text-base font-semibold text-white bg-green-500 rounded-2xl">
+            <span className="w-full px-4 py-2 text-xs font-semibold text-white bg-green-500 sm:text-sm lg:text-base rounded-2xl">
               UI/UX Enthusiast
             </span>
           </div>

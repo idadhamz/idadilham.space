@@ -7,7 +7,7 @@ export default function ProjectItem({ data }) {
             <img
               src={data.src}
               alt={data.altText}
-              className="object-contain w-full mb-5 sm:object-cover h-80 rounded-xl"
+              className="object-contain w-full h-auto mb-5 sm:object-cover sm:h-80 rounded-xl"
             />
           </div>
           <div className="flex flex-col gap-4">

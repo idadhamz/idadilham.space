@@ -3,7 +3,7 @@ import listWork from "@/data/work";
 export default function WorkHistory() {
   return (
     <section className="body-font">
-      <h1 className="my-5 text-xl antialiased sm:text-3xl">
+      <h1 className="my-5 text-2xl antialiased sm:text-4xl">
         <span className="font-semibold text-green-700 dark:text-green-400">
           Work
         </span>{" "}
@@ -14,14 +14,11 @@ export default function WorkHistory() {
           .sort((a, b) => b.id - a.id)
           .map((data, index) => (
             <div
-              className="relative flex items-start pt-5 pb-5 md:w-1/3"
+              className="relative flex flex-col pt-5 pb-5 sm:flex-row sm:w-1/3"
               key={index}
             >
-              <div className="relative z-10 inline-flex items-center justify-center flex-shrink-0 w-12 h-12 text-base font-medium text-white bg-green-500 rounded-full sm:text-lg sm:mt-0 title-font">
-                {index + 1}
-              </div>
-              <div className="flex flex-col items-center flex-grow pl-6 md:pl-2 sm:items-center sm:flex-row">
-                <div className="flex-grow sm:pl-6 sm:space-y-2">
+              <div className="flex flex-col flex-grow sm:flex-row">
+                <div className="flex-grow sm:space-y-2">
                   <h1 className="mb-1 text-lg font-semibold leading-relaxed sm:text-xl title-font">
                     {data.job}
                   </h1>
