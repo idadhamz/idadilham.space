@@ -5,7 +5,7 @@ export default function WorkHistory() {
     <section className="body-font">
       <h1 className="my-5 text-2xl antialiased sm:text-4xl">
         <span className="font-semibold text-green-700 dark:text-green-400">
-          Work
+          Career
         </span>{" "}
         History
       </h1>

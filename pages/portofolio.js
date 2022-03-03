@@ -3,12 +3,12 @@ import listProjects from "@/data/projects";
 import Layout from "@/components/layout";
 import ProjectItem from "@/components/ProjectItem";
 
-export default function Projects() {
+export default function Portofolio() {
   const data = {
-    title: "Projects | Idadilham",
+    title: "Portofolio | Idadilham",
     description:
-      "Projects Portfolio of Dadi Ilham S, was create website and UI exploration.",
-    url: "https://idadilham.site/projects",
+      "Portfolio of Dadi Ilham S, was create website and UI exploration.",
+    url: "https://idadilham.space/portofolio",
   };
 
   return (
@@ -18,7 +18,7 @@ export default function Projects() {
           <span className="font-semibold text-green-700 dark:text-green-400">
             All
           </span>{" "}
-          Projects
+          Portofolio
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           {listProjects

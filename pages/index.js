@@ -11,15 +11,18 @@ export default function Home(props) {
     title: "Idadilham",
     description:
       "Hello its me Dadi ilham S. I'm a technology enthusiast and currently final year Information System Student at UIN Syarif Hidayatullah Jakarta.",
-    url: "https://idadilham.site/",
+    url: "https://idadilham.space/",
   };
 
   return (
     <Layout data={data}>
       <div className="p-5 space-y-10 lg:p-12">
         <Hero />
+        <hr />
         <WorkHistory />
+        <hr />
         <LatestProject />
+        <hr />
         <div className="grid grid-cols-1 lg:grid-cols-4">
           <div className="col-span-4">
             <div className="flex items-center justify-between">

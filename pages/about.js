@@ -5,7 +5,7 @@ export default function About() {
     title: "About | Idadilham",
     description:
       "About of Dadi Ilham S, Say Hello! If you want to talk to me about something that could interest me, you can send me message to @idadcode instagram.",
-    url: "https://idadilham.site/about",
+    url: "https://idadilham.space/about",
   };
 
   const urlExternal = (text, url) => {

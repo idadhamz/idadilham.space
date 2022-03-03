@@ -7,7 +7,7 @@ export default function Blog(props) {
     title: "Blog | Idadilham",
     description:
       "Blog of Dadi Ilham S, sharing knowledge about technology like programing code and others.",
-    url: "https://idadilham.site/blog",
+    url: "https://idadilham.space/blog",
   };
 
   return (
@@ -16,8 +16,7 @@ export default function Blog(props) {
         <h1 className="mb-3 text-2xl sm:text-4xl antialiased">
           <span className="font-semibold text-green-700 dark:text-green-400">
             Blog
-          </span>{" "}
-          Story
+          </span>
         </h1>
         <div className="grid grid-cols-1 my-10 md:grid-cols-2">
           <BlogList allBlogs={props.allBlogs} />

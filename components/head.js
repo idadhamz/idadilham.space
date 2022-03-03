@@ -16,7 +16,7 @@ export default function index({ data }) {
       <meta property="og:title" content={data.title} key="ogtitle" />
       <meta
         property="og:image"
-        content="https://idadilham.site/assets/img/Idadilham.site.png"
+        content="https://idadilham.space/assets/img/Idadilham.site.png"
         key="ogimage"
       />
       <meta property="og:description" content={data.description} key="ogdesc" />
@@ -24,14 +24,14 @@ export default function index({ data }) {
 
       <meta
         name="twitter:card"
-        content="https://idadilham.site/assets/img/Idadilham.site.png"
+        content="https://idadilham.space/assets/img/Idadilham.site.png"
       />
       <meta name="twitter:site" content="@idadilham" />
       <meta name="twitter:title" content={data.title} />
       <meta name="twitter:description" content={data.description} />
       <meta
         name="twitter:image"
-        content="https://idadilham.site/assets/img/Idadilham.site.png"
+        content="https://idadilham.space/assets/img/Idadilham.site.png"
       />
 
       {/* Poppins */}

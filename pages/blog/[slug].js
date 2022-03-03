@@ -11,7 +11,7 @@ export default function BlogTemplate({ frontmatter, markdownBody, titleBlog }) {
   const data = {
     title: titleBlog,
     description: titleBlog,
-    url: "https://idadilham.site/about",
+    url: "https://idadilham.space/about",
   };
   const image_src = "/assets/uploads";
 

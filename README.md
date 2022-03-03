@@ -13,7 +13,7 @@
 
 ## Live
 
-- [Idadilham.site](https://idadilham.site/)
+- [Idadilham.site](https://idadilham.space/)
 
 ## Running locally
 

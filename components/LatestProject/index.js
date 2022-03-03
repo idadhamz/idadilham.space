@@ -11,11 +11,11 @@ export default function LatestProject() {
             <span className="font-semibold text-green-700 dark:text-green-400">
               Latest
             </span>{" "}
-            Projects
+            Portofolio
           </h1>
           <SeeAll
-            href="projects"
-            text="See All Projects"
+            href="portofolio"
+            text="See All Portofolio"
             d_icon="M17 8l4 4m0 0l-4 4m4-4H3"
           />
         </div>
