@@ -14,18 +14,20 @@ export default function WorkHistory() {
           .sort((a, b) => b.id - a.id)
           .map((data, index) => (
             <div
-              className="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-1/3 flex-grow space-y-2 sm:space-y-4 p-2 sm:p-4"
+              className="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-1/3"
               key={index}
             >
-              <h1 className="mb-1 text-lg font-semibold leading-relaxed sm:text-xl title-font">
-                {data.job}
-              </h1>
-              <p className="text-sm sm:text-base">
-                <span className="text-green-700 dark:text-green-400 hover:underline">
-                  <a href={data.url}> {data.company}</a>
-                </span>{" "}
-                | {data.date}
-              </p>
+              <div className="flex-grow sm:space-y-2 p-2 sm:p-4">
+                <h1 className="mb-1 text-lg font-semibold leading-relaxed sm:text-xl title-font">
+                  {data.job}
+                </h1>
+                <p className="text-sm sm:text-base">
+                  <span className="text-green-700 dark:text-green-400 hover:underline">
+                    <a href={data.url}> {data.company}</a>
+                  </span>{" "}
+                  | {data.date}
+                </p>
+              </div>
             </div>
           ))}
       </div>
