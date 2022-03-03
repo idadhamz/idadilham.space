@@ -5,7 +5,7 @@ import socMed from "@/data/socMed";
 
 const ConnectMe = () => {
   return (
-    <div className="px-5 lg:px-12">
+    <div>
       <h1 className="mb-10 text-2xl antialiased sm:text-4xl">
         <span className="font-semibold text-green-700 dark:text-green-400">
           Connect With Me

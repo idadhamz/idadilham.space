@@ -12,7 +12,7 @@ export default function About() {
 
   return (
     <Layout data={data}>
-      <div className="py-12 space-y-12">
+      <div className="p-5 space-y-10 lg:p-12">
         <AboutMe />
         <hr />
         <ConnectMe />
