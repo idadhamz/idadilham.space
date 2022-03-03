@@ -14,11 +14,11 @@ export default function WorkHistory() {
           .sort((a, b) => b.id - a.id)
           .map((data, index) => (
             <div
-              className="relative flex flex-col pt-5 pb-5 sm:flex-row sm:w-1/3"
+              className="relative flex flex-col pt-5 pb-5 sm:flex-row sm:w-1/3 gap-2 sm:gap-4"
               key={index}
             >
               <div className="flex flex-col flex-grow sm:flex-row">
-                <div className="flex-grow sm:space-y-2">
+                <div className="flex-grow sm:space-y-2 border-2 rounded-2xl p-2 sm:p-4">
                   <h1 className="mb-1 text-lg font-semibold leading-relaxed sm:text-xl title-font">
                     {data.job}
                   </h1>
