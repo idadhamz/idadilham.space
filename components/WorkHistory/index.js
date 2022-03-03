@@ -22,11 +22,11 @@ export default function WorkHistory() {
                   <h1 className="mb-1 text-lg font-semibold leading-relaxed sm:text-xl title-font">
                     {data.job}
                   </h1>
-                  <p className="text-base sm:text-lg">
+                  <p className="text-sm sm:text-base">
                     <span className="text-green-700 dark:text-green-400 hover:underline">
                       <a href={data.url}> {data.company}</a>
                     </span>{" "}
-                    <br />({data.date})
+                    | {data.date}
                   </p>
                 </div>
               </div>
