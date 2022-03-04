@@ -12,7 +12,7 @@ export default function Nav() {
   return (
     <div>
       <ul className="hidden p-10 lg:fixed lg:flex lg:flex-col lg:justify-between lg:h-full">
-        <div>
+        <div className="space-y-2">
           <Link href="/">
             <img
               src="/assets/img/fotoVector.jpg"
@@ -55,7 +55,7 @@ export default function Nav() {
           </svg>
         </button>
       </div>
-      <ul className={open ? "px-5 py-3 block" : "hidden"}>
+      <ul className={open ? "px-5 py-3 block space-y-4" : "hidden"}>
         <NavContent />
         <ButtonToggle theme={theme} setTheme={setTheme} />
       </ul>

@@ -28,18 +28,18 @@ export default function NavContent() {
   ];
 
   return (
-    <div>
+    <>
       {listNavs.map((data, index) => (
         <li
           className={
             router.pathname == data.href
-              ? "rounded-xl text-green-700 dark:text-green-400 dark:hover:text-white"
-              : ""
+              ? "rounded-xl text-green-700 dark:text-green-400 dark:hover:text-white font-bold"
+              : "font-normal"
           }
           key={index}
         >
           <Link href={data.href}>
-            <p className="w-max p-2 font-sans text-xl font-semibold rounded-full cursor-pointer lg:text-xl dark:hover:bg-green-500 hover:bg-green-200 lg:p-4 flex items-center">
+            <p className="w-max p-2 font-sans text-lg sm:text-xl rounded-full cursor-pointer dark:hover:bg-green-500 hover:bg-green-200 lg:p-4 flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -59,6 +59,6 @@ export default function NavContent() {
           </Link>
         </li>
       ))}
-    </div>
+    </>
   );
 }
