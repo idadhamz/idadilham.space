@@ -26,7 +26,7 @@ export default function index({ data }) {
       <meta property="og:url" content={data.url} key="ogurl" />
       <meta
         property="og:image"
-        content="https://idadilham.space/assets/img/Idadilham.space.svg"
+        content="https://idadilham.space/assets/img/Idadilham.space.png"
         key="ogimage"
       />
       <meta property="og:site_name" content={data.title} key="ogsitename" />
@@ -36,11 +36,11 @@ export default function index({ data }) {
       {/* Twitter Graph */}
       <meta
         name="twitter:card"
-        content="https://idadilham.space/assets/img/Idadilham.space.svg"
+        content="https://idadilham.space/assets/img/Idadilham.space.png"
       />
       <meta
         name="twitter:image"
-        content="https://idadilham.space/assets/img/Idadilham.space.svg"
+        content="https://idadilham.space/assets/img/Idadilham.space.png"
       />
       <meta name="twitter:site" content="@idadilham" />
       <meta name="twitter:title" content={data.title} />
