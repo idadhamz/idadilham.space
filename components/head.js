@@ -3,6 +3,7 @@ import Head from "next/head";
 export default function index({ data }) {
   return (
     <Head>
+      {/* Meta Default */}
       <meta charSet="UTF-8"></meta>
       <title>{data.title}</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -12,35 +13,38 @@ export default function index({ data }) {
         name="google-site-verification"
         content="QtPLOMbLk5ajIwIdcq0yrxGvpF5Djm9hrsVk7kMl-6g"
       />
+      <link rel="shortcut icon" href="/assets/img/fotoVectorIcon.png" />
 
-      <meta property="og:title" content={data.title} key="ogtitle" />
-      <meta
-        property="og:image"
-        content="https://idadilham.space/assets/img/Idadilham.space.svg"
-        key="ogimage"
-      />
-      <meta property="og:description" content={data.description} key="ogdesc" />
-      <meta property="og:url" content={data.url} key="ogurl" />
-
-      <meta
-        name="twitter:card"
-        content="https://idadilham.space/assets/img/Idadilham.space.svg"
-      />
-      <meta name="twitter:site" content="@idadilham" />
-      <meta name="twitter:title" content={data.title} />
-      <meta name="twitter:description" content={data.description} />
-      <meta
-        name="twitter:image"
-        content="https://idadilham.space/assets/img/Idadilham.space.svg"
-      />
-
-      {/* Poppins */}
+      {/* CSS Fonts */}
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&amp;display=swap"
         rel="stylesheet"
       />
-      <link rel="shortcut icon" href="/assets/img/fotoVector.jpg" />
+
+      {/* Open Graph */}
+      <meta property="og:url" content={data.url} key="ogurl" />
+      <meta
+        property="og:image"
+        content="https://idadilham.space/assets/img/Idadilham.space.svg"
+        key="ogimage"
+      />
+      <meta property="og:site_name" content={data.title} key="ogsitename" />
+      <meta property="og:title" content={data.title} key="ogtitle" />
+      <meta property="og:description" content={data.description} key="ogdesc" />
+
+      {/* Twitter Graph */}
+      <meta
+        name="twitter:card"
+        content="https://idadilham.space/assets/img/Idadilham.space.svg"
+      />
+      <meta
+        name="twitter:image"
+        content="https://idadilham.space/assets/img/Idadilham.space.svg"
+      />
+      <meta name="twitter:site" content="@idadilham" />
+      <meta name="twitter:title" content={data.title} />
+      <meta name="twitter:description" content={data.description} />
     </Head>
   );
 }
