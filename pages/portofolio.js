@@ -7,7 +7,7 @@ import TabProjects from "@/components/Molecules/TabProjects";
 
 export default function Portofolio() {
   const data = {
-    title: "Portofolio | Idadilham",
+    title: "Portofolio | Idadilham.space",
     description:
       "Portfolio of Dadi Ilham S, was create website and UI exploration.",
     url: "https://idadilham.space/portofolio",

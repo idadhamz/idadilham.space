@@ -9,9 +9,10 @@ import reformatDate from "helpers/reformatDate";
 
 export default function BlogTemplate({ frontmatter, markdownBody, titleBlog }) {
   const data = {
-    title: titleBlog,
-    description: titleBlog,
+    title: `${titleBlog} | Idadilham.space`,
+    description: `${titleBlog} | Idadilham.space`,
     url: "https://idadilham.space/about",
+    img: `https://idadilham.space/assets/uploads/${frontmatter.image}`,
   };
   const image_src = "/assets/uploads";
 

@@ -4,7 +4,7 @@ import BlogList from "@/components/blogList";
 
 export default function Blog(props) {
   const data = {
-    title: "Blog | Idadilham",
+    title: "Blog | Idadilham.space",
     description:
       "Blog of Dadi Ilham S, sharing knowledge about technology like programing code and others.",
     url: "https://idadilham.space/blog",

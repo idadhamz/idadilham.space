@@ -4,7 +4,7 @@ import ConnectMe from "@/components/ConnectMe";
 
 export default function About() {
   const data = {
-    title: "About | Idadilham",
+    title: "About | Idadilham.space",
     description:
       "About of Dadi Ilham S, Say Hello! If you want to talk to me about something that could interest me, you can send me message to @idadcode instagram.",
     url: "https://idadilham.space/about",
