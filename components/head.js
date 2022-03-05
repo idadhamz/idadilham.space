@@ -16,7 +16,7 @@ export default function index({ data }) {
       <meta property="og:title" content={data.title} key="ogtitle" />
       <meta
         property="og:image"
-        content="https://idadilham.space/assets/img/Idadilham.site.png"
+        content="https://idadilham.space/assets/img/Idadilham.space.svg"
         key="ogimage"
       />
       <meta property="og:description" content={data.description} key="ogdesc" />
@@ -24,14 +24,14 @@ export default function index({ data }) {
 
       <meta
         name="twitter:card"
-        content="https://idadilham.space/assets/img/Idadilham.site.png"
+        content="https://idadilham.space/assets/img/Idadilham.space.svg"
       />
       <meta name="twitter:site" content="@idadilham" />
       <meta name="twitter:title" content={data.title} />
       <meta name="twitter:description" content={data.description} />
       <meta
         name="twitter:image"
-        content="https://idadilham.space/assets/img/Idadilham.site.png"
+        content="https://idadilham.space/assets/img/Idadilham.space.svg"
       />
 
       {/* Poppins */}
@@ -40,6 +40,7 @@ export default function index({ data }) {
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&amp;display=swap"
         rel="stylesheet"
       />
+      <link rel="shortcut icon" href="/assets/img/fotoVector.jpg" />
     </Head>
   );
 }
