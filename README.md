@@ -1,4 +1,4 @@
-# Idadilham.site
+# Idadilham.space
 
 <p align="left">
   <img src="/public/assets/img/HomePage.PNG" alt='preview mobile'>
@@ -8,12 +8,12 @@
 </p>
 
 <p align="left">
-  Code for my personal website [<a href='https://idadilham.site'>Idadilham.site</a>] 🚀 using <a href='https://nextjs.org/'>Next.js</a>, <a href='http://tailwindcss.com/'>Tailwind CSS</a>, <a href='https://forestry.io/'>Forestry IO</a> and Hosted on <a href='https://www.netlify.com/'>Netlify</a> 
+  Code for my personal website [<a href='https://idadilham.space'>Idadilham.space</a>] 🚀 using <a href='https://nextjs.org/'>Next.js</a>, <a href='http://tailwindcss.com/'>Tailwind CSS</a>, <a href='https://forestry.io/'>Forestry IO</a> and Hosted on <a href='https://www.netlify.com/'>Netlify</a> 
 </p>
 
 ## Live
 
-- [Idadilham.site](https://idadilham.space/)
+- [Idadilham.space](https://idadilham.space/)
 
 ## Running locally
 
