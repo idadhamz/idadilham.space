@@ -80,6 +80,15 @@ const listProjects = [
     type: "Website",
     stack: ["Next JS", "Tailwind CSS", "Chakra UI", "Laravel"],
   },
+  {
+    id: 10,
+    src: "/assets/img/projects/PantoPorto.png",
+    altText: "panto-landing-page",
+    caption: "Panto Furniture",
+    url: "https://panto-slicing.vercel.app/",
+    type: "Website",
+    stack: ["HTML", "CSS", "Javascript", "Font Awesome"],
+  },
 ];
 
 export default listProjects;
