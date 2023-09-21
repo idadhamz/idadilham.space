@@ -15,7 +15,7 @@ const listWork = [
   },
   {
     id: 3,
-    job: "Junior Web Developer Internship",
+    job: "Web Developer Internship",
     company: "Nusantara Beta Studio (NBS)",
     date: "Feb 2021 - Apr 2021",
     url: "https://nbs.co.id/",
@@ -29,10 +29,17 @@ const listWork = [
   },
   {
     id: 5,
-    job: "Software Developer Internship",
+    job: "Software Engineer Internship",
     company: "Telkom Direktorat Digital Business",
     date: "Sep 2021 - Feb 2022",
     url: "https://internship.ddbtelkom.id/",
+  },
+  {
+    id: 6,
+    job: "Software Engineer",
+    company: "PT. Mandala Multifinance Tbk",
+    date: "Apr 2022 - Present",
+    url: "https://mandalafinance.com/",
   },
 ];
 

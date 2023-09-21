@@ -18,19 +18,15 @@ export default function Home(props) {
     <Layout data={data}>
       <div className="p-5 space-y-10 lg:p-12">
         <Hero />
-        <hr />
         <WorkHistory />
-        <hr />
         <LatestProject />
-        <hr />
         <div className="grid grid-cols-1 lg:grid-cols-4">
           <div className="col-span-4">
             <div className="flex items-center justify-between">
-              <h1 className="my-5 text-2xl antialiased sm:text-4xl">
+              <h1 className="my-5 text-xl antialiased sm:text-2xl">
                 <span className="font-semibold text-green-700 dark:text-green-400">
-                  Latest
-                </span>{" "}
-                Blogs
+                  Latest Blogs
+                </span>
               </h1>
               <SeeAll
                 href="blog"
@@ -39,7 +35,7 @@ export default function Home(props) {
               />
             </div>
             <div className="col-span-4">
-              <div className="grid grid-cols-1 my-10 md:grid-cols-2">
+              <div className="grid grid-cols-1 my-10 md:grid-cols-2 gap-8">
                 <BlogList allBlogs={props.allBlogs.slice(0, 2)} />
               </div>
             </div>

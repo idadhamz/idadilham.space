@@ -24,14 +24,12 @@ const AboutMe = () => {
           Now i'm living in <b>DKI Jakarta, Indonesia</b>. I have a passion in
           software engineering especially in website developers, and know i'm
           studying frontend things from HTML, CSS, Javascript and their
-          framework CSS or Javascript. Currently i'm doing remote web dev work
-          for{" "}
+          framework CSS or Javascript. 🔭 Currently i'm working on{" "}
           {urlExternal(
-            "DDB (Direktorat Digital Business)",
-            "https://internship.ddbtelkom.id/"
+            "PT Mandala Multifinance",
+            "https://mandalafinance.com/"
           )}{" "}
-          Telkom Indonesia for 6 months and studying with final student status
-          in{" "}
+          and studying with final student status in{" "}
           {urlExternal(
             "UIN Syarif Hidayatullah Jakarta",
             "https://www.uinjkt.ac.id/"

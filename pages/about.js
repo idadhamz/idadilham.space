@@ -14,7 +14,6 @@ export default function About() {
     <Layout data={data}>
       <div className="p-5 space-y-10 lg:p-12">
         <AboutMe />
-        <hr />
         <ConnectMe />
       </div>
     </Layout>

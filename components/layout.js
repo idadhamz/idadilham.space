@@ -8,7 +8,7 @@ export default function Layout(props) {
       <MetaHead data={props.data} />
 
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-5 lg:divide-x">
+        <div className="grid grid-cols-1 lg:grid-cols-5">
           <div className="flex flex-col gap-4">
             <Nav />
           </div>

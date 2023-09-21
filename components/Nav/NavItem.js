@@ -29,17 +29,17 @@ export default function NavContent() {
 
   return (
     <>
-      {listNavs.map((data, index) => (
+      {listNavs.map((data) => (
         <li
           className={
             router.pathname == data.href
-              ? "rounded-xl text-green-700 dark:text-green-400 dark:hover:text-white font-bold"
-              : "font-normal"
+              ? "text-green-400 dark:hover:text-white font-bold"
+              : "text-black dark:text-white dark:hover:text-green-400 hover:text-green-400  font-normal"
           }
-          key={index}
+          key={data?.text}
         >
           <Link href={data.href}>
-            <p className="w-max p-2 font-sans text-lg sm:text-xl rounded-full cursor-pointer dark:hover:bg-green-500 hover:bg-green-200 lg:p-4 flex items-center">
+            <p className="w-max p-1 font-sans text-lg sm:text-xl cursor-pointer flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

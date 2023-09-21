@@ -6,7 +6,7 @@ export default function ButtonToggle({ theme, setTheme }) {
       <button
         aria-label="Toggle Dark Mode"
         type="button"
-        className="flex items-center w-full p-2 font-sans text-xl font-semibold cursor-pointer lg:text-xl lg:p-4 hover:underline"
+        className="flex items-center w-full p-2 font-sans text-xl cursor-pointer lg:text-xl lg:p-4 hover:underline"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       >
         {theme === "dark" ? (

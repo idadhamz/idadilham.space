@@ -38,21 +38,20 @@ export default function Portofolio() {
       <div className="p-5 lg:p-12 space-y-12">
         <h1 className="mb-3 text-2xl sm:text-4xl antialiased">
           <span className="font-semibold text-green-700 dark:text-green-400">
-            All
-          </span>{" "}
-          Portofolio
+            All Portofolio
+          </span>
         </h1>
-        <div className="space-y-2">
+        <div className="space-y-8">
           <TabProjects
             tabList={tabList}
             handleSelectedTab={handleSelectedTab}
             active={active}
           />
-          <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {filterProjects
               .sort((a, b) => b.id - a.id)
-              .map((data, index) => (
-                <ProjectItem data={data} key={index} />
+              .map((data) => (
+                <ProjectItem data={data} key={data} />
               ))}
           </div>
         </div>

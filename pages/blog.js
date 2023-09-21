@@ -18,7 +18,7 @@ export default function Blog(props) {
             Blog
           </span>
         </h1>
-        <div className="grid grid-cols-1 my-10 md:grid-cols-2">
+        <div className="grid grid-cols-1 my-10 md:grid-cols-2 gap-8">
           <BlogList allBlogs={props.allBlogs} />
         </div>
       </div>
