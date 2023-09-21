@@ -26,7 +26,7 @@ export default function Nav() {
       </ul>
       <div className="flex items-center justify-between px-5 py-5 lg:hidden">
         <div>
-          <Link href="/">
+          <Link href="/" legacyBehavior>
             <img
               src="/assets/img/fotoVector.jpg"
               alt="foto-dadi-nav"

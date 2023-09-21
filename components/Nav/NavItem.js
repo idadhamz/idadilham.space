@@ -27,38 +27,36 @@ export default function NavContent() {
     },
   ];
 
-  return (
-    <>
-      {listNavs.map((data) => (
-        <li
-          className={
-            router.pathname == data.href
-              ? "text-green-400 dark:hover:text-white font-bold"
-              : "text-black dark:text-white dark:hover:text-green-400 hover:text-green-400  font-normal"
-          }
-          key={data?.text}
-        >
-          <Link href={data.href}>
-            <p className="w-max p-1 font-sans text-lg sm:text-xl cursor-pointer flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="h-7 w-7"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d={data.icon}
-                />
-              </svg>
-              <span className="px-5">{data.text}</span>
-            </p>
-          </Link>
-        </li>
-      ))}
-    </>
-  );
+  return <>
+    {listNavs.map((data) => (
+      <li
+        className={
+          router.pathname == data.href
+            ? "text-green-400 dark:hover:text-white font-bold"
+            : "text-black dark:text-white dark:hover:text-green-400 hover:text-green-400  font-normal"
+        }
+        key={data?.text}
+      >
+        <Link href={data.href} legacyBehavior>
+          <p className="w-max p-1 font-sans text-lg sm:text-xl cursor-pointer flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              className="h-7 w-7"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d={data.icon}
+              />
+            </svg>
+            <span className="px-5">{data.text}</span>
+          </p>
+        </Link>
+      </li>
+    ))}
+  </>;
 }

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function BackText({ href, text, d_icon }) {
   return (
-    <Link href={`/${href}`}>
+    <Link href={`/${href}`} legacyBehavior>
       <h1 className="mb-10 text-xl antialiased cursor-pointer lg:text-xl hover:underline">
         <svg
           xmlns="http://www.w3.org/2000/svg"

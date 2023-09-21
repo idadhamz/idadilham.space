@@ -19,7 +19,7 @@ export default function BlogTemplate({ frontmatter, markdownBody, titleBlog }) {
   if (!frontmatter) return <></>;
 
   return (
-    <Layout data={data}>
+    <Layout data={data} suppressHydrationWarning>
       <div className="p-5 lg:p-12">
         <BackText
           href="blog"

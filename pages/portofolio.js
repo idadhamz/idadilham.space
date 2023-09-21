@@ -17,6 +17,11 @@ export default function Portofolio() {
 
   const [active, setActive] = useState(tabList[0]);
   const [filterProjects, setFilterProjects] = useState([]);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (listProjects) {
@@ -33,8 +38,10 @@ export default function Portofolio() {
     }
   };
 
+  if (!mounted) return <></>;
+
   return (
-    <Layout data={data}>
+    <Layout data={data} suppressHydrationWarning>
       <div className="p-5 lg:p-12 space-y-12">
         <h1 className="mb-3 text-2xl sm:text-4xl antialiased">
           <span className="font-semibold text-green-700 dark:text-green-400">

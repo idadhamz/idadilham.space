@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Layout from "@/components/layout";
 import AboutMe from "@/components/AboutMe";
 import ConnectMe from "@/components/ConnectMe";
@@ -10,8 +11,15 @@ export default function About() {
     url: "https://idadilham.space/about",
   };
 
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return <></>;
+
   return (
-    <Layout data={data}>
+    <Layout data={data} suppressHydrationWarning>
       <div className="p-5 space-y-10 lg:p-12">
         <AboutMe />
         <ConnectMe />

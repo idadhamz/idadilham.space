@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import matter from "gray-matter";
 import Layout from "@/components/layout";
 import BlogList from "@/components/blogList";
@@ -10,8 +11,15 @@ export default function Blog(props) {
     url: "https://idadilham.space/blog",
   };
 
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return <></>;
+
   return (
-    <Layout data={data}>
+    <Layout data={data} suppressHydrationWarning>
       <div className="p-5 lg:p-12">
         <h1 className="mb-3 text-2xl sm:text-4xl antialiased">
           <span className="font-semibold text-green-700 dark:text-green-400">
