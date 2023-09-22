@@ -5,6 +5,9 @@ import Layout from "@/components/layout";
 import ProjectItem from "@/components/ProjectItem";
 import TabProjects from "@/components/Molecules/TabProjects";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+
 export default function Portofolio() {
   const data = {
     title: "Portofolio | Idadilham.space",
@@ -43,11 +46,18 @@ export default function Portofolio() {
   return (
     <Layout data={data} suppressHydrationWarning>
       <div className="p-5 lg:p-12 space-y-12">
-        <h1 className="mb-3 text-2xl sm:text-4xl antialiased">
-          <span className="font-semibold text-green-700 dark:text-green-400">
-            All Portofolio
-          </span>
-        </h1>
+        <div className="flex gap-4 items-center">
+          <FontAwesomeIcon
+            icon={faLaptopCode}
+            className="text-green-700 dark:text-green-400"
+            style={{
+              fontSize: 30,
+            }}
+          />
+          <h1 className="text-2xl sm:text-4xl antialiased font-semibold text-green-700 dark:text-green-400">
+            Portofolio
+          </h1>
+        </div>
         <div className="space-y-8">
           <TabProjects
             tabList={tabList}

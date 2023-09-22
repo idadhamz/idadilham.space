@@ -3,6 +3,9 @@ import matter from "gray-matter";
 import Layout from "@/components/layout";
 import BlogList from "@/components/blogList";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBookmark } from "@fortawesome/free-solid-svg-icons";
+
 export default function Blog(props) {
   const data = {
     title: "Blog | Idadilham.space",
@@ -21,11 +24,18 @@ export default function Blog(props) {
   return (
     <Layout data={data} suppressHydrationWarning>
       <div className="p-5 lg:p-12">
-        <h1 className="mb-3 text-2xl sm:text-4xl antialiased">
-          <span className="font-semibold text-green-700 dark:text-green-400">
+        <div className="flex gap-4 items-center">
+          <FontAwesomeIcon
+            icon={faBookmark}
+            className="text-green-700 dark:text-green-400"
+            style={{
+              fontSize: 30,
+            }}
+          />
+          <h1 className="text-2xl sm:text-4xl antialiased font-semibold text-green-700 dark:text-green-400">
             Blog
-          </span>
-        </h1>
+          </h1>
+        </div>
         <div className="grid grid-cols-1 my-10 md:grid-cols-2 gap-8">
           <BlogList allBlogs={props.allBlogs} />
         </div>

@@ -34,30 +34,32 @@ export default function Nav() {
             ></img>
           </Link>
         </div>
-        <button
-          onClick={() => setOpen(!open)}
-          className="inline-flex items-center justify-center p-5 text-gray-800 rounded-md dark:text-white focus:outline-none"
-          aria-label="Burger Menu"
-        >
-          <svg
-            className="w-8 h-8 text-black dark:text-white"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+        <div className="flex items-center gap-4">
+          <ButtonToggle theme={theme} setTheme={setTheme} />
+          <button
+            onClick={() => setOpen(!open)}
+            className="inline-flex items-center justify-center py-5 text-gray-800 rounded-md dark:text-white focus:outline-none"
+            aria-label="Burger Menu"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d={open ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
-            />
-          </svg>
-        </button>
+            <svg
+              className="w-8 h-8 text-black dark:text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d={open ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+              />
+            </svg>
+          </button>
+        </div>
       </div>
       <ul className={open ? "px-5 py-3 block space-y-2" : "hidden"}>
         <NavContent />
-        <ButtonToggle theme={theme} setTheme={setTheme} />
       </ul>
     </div>
   );

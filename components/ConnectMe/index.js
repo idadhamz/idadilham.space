@@ -3,6 +3,8 @@ import React from "react";
 import urlExternal from "helpers/urlExternal";
 import socMed from "@/data/socMed";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const ConnectMe = () => {
   return (
     <div>
@@ -15,10 +17,22 @@ const ConnectMe = () => {
         <ul className="space-y-2">
           {socMed.map((item) => (
             <li
-              className="text-base antialiased tracking-wide sm:text-lg"
+              className="text-base antialiased tracking-wide sm:text-lg flex gap-4 items-center"
               key={item}
             >
-              {item.name} - {urlExternal(item.text, item.url)}
+              <div
+                className="flex justify-center items-center"
+                style={{ width: "25px" }}
+              >
+                <FontAwesomeIcon
+                  icon={item.name}
+                  className="text-black dark:text-white"
+                  style={{
+                    fontSize: 20,
+                  }}
+                />
+              </div>
+              {urlExternal(item.text, item.url)}
             </li>
           ))}
         </ul>

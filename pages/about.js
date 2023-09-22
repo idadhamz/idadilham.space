@@ -3,6 +3,9 @@ import Layout from "@/components/layout";
 import AboutMe from "@/components/AboutMe";
 import ConnectMe from "@/components/ConnectMe";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+
 export default function About() {
   const data = {
     title: "About | Idadilham.space",
@@ -21,6 +24,18 @@ export default function About() {
   return (
     <Layout data={data} suppressHydrationWarning>
       <div className="p-5 space-y-10 lg:p-12">
+        <div className="flex gap-4 items-center">
+          <FontAwesomeIcon
+            icon={faUser}
+            className="text-green-700 dark:text-green-400"
+            style={{
+              fontSize: 30,
+            }}
+          />
+          <h1 className="text-2xl sm:text-4xl antialiased font-semibold text-green-700 dark:text-green-400">
+            About
+          </h1>
+        </div>
         <AboutMe />
         <ConnectMe />
       </div>

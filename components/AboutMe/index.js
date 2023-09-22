@@ -5,11 +5,6 @@ import urlExternal from "helpers/urlExternal";
 const AboutMe = () => {
   return (
     <div>
-      <h1 className="mb-10 text-2xl antialiased sm:text-4xl">
-        <span className="font-semibold text-green-700 dark:text-green-400">
-          About
-        </span>
-      </h1>
       <div className="w-full space-y-6 sm:w-4/5">
         <img
           src="/assets/img/fotoDadi.jfif"

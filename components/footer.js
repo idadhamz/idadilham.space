@@ -1,12 +1,23 @@
 import Link from "next/link";
+import {
+  faGithub,
+  faLinkedin,
+  faMedium,
+  faTwitter,
+  faDribbble,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
   const listFooter = [
-    { text: "Instagram", href: "https://www.instagram.com/idadcode/" },
-    { text: "Twitter", href: "https://twitter.com/Idadilham" },
-    { text: "Github", href: "https://github.com/idadhamz" },
-    { text: "Medium", href: "https://idadilham.medium.com/" },
-    { text: "LinkedIn", href: "https://www.linkedin.com/in/idadilham/" },
+    { icon: faGithub, href: "https://github.com/idadhamz" },
+    { icon: faLinkedin, href: "https://www.linkedin.com/in/idadilham/" },
+    { icon: faMedium, href: "https://idadilham.medium.com/" },
+    { icon: faTwitter, href: "https://twitter.com/Idadilham" },
+    { icon: faDribbble, href: "https://dribbble.com/idadhamz" },
+    { icon: faInstagram, href: "https://www.instagram.com/idadcode/" },
   ];
 
   const techStack = [
@@ -44,14 +55,14 @@ export default function Footer() {
     <div className="py-6 space-y-4 sm:p-10">
       <div className="flex flex-col gap-2 p-5 sm:p-0 space-y-4">
         <div className="flex flex-col sm:items-center justify-between sm:flex-row space-y-4">
-          {/* <Link href="/">
+          <Link href="/">
             <img
               src="/assets/img/fotoVector.jpg"
               alt="foto-dadi-nav"
-              className="object-cover h-auto p-2 my-4 border-2 border-gray-300 cursor-pointer w-28 lg:w-28 lg:h-auto rounded-2xl hover:border-green-500"
+              className="object-cover h-auto p-2 my-4 border-2 border-gray-300 cursor-pointer w-20 lg:w-20 lg:h-auto rounded-2xl hover:border-green-500"
             />
-          </Link> */}
-          <div className="flex flex-row gap-4">
+          </Link>
+          <div className="flex flex-row flex-wrap gap-8">
             {listFooter.map((data) => (
               <a
                 href={data.href}
@@ -59,9 +70,13 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 key={data?.text}
               >
-                <h1 className="text-sm font-medium cursor-pointer sm:text-base hover:text-green-500">
-                  {data.text}
-                </h1>
+                <FontAwesomeIcon
+                  icon={data.icon}
+                  className="text-black dark:text-white"
+                  style={{
+                    fontSize: 30,
+                  }}
+                />
               </a>
             ))}
           </div>
