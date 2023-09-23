@@ -3,8 +3,8 @@ import Layout from "@/components/layout";
 import AboutMe from "@/components/AboutMe";
 import ConnectMe from "@/components/ConnectMe";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 export default function About() {
   const data = {
@@ -24,7 +24,7 @@ export default function About() {
   return (
     <Layout data={data} suppressHydrationWarning>
       <div className="p-5 space-y-10 lg:p-12">
-        <div className="flex gap-4 items-center">
+        {/* <div className="flex gap-4 items-center">
           <FontAwesomeIcon
             icon={faUser}
             className="text-green-700 dark:text-green-400"
@@ -35,7 +35,7 @@ export default function About() {
           <h1 className="text-2xl sm:text-4xl antialiased font-semibold text-green-700 dark:text-green-400">
             About
           </h1>
-        </div>
+        </div> */}
         <AboutMe />
         <ConnectMe />
       </div>
